@@ -4,5 +4,6 @@
 
 @import "minima";
 
-@import "uikit/css/uikit";
+// UIKit must be referenced at _layouts/base.html in order to build correctly on github
+
 @import "karen-theme";
