@@ -5,6 +5,8 @@
       "name": "default",
       "pageBundle": false,
       "previewPath": null,
+      "fileType": "markdown",
+      "filePrefix": "YYYY-MM-DD",
       "fields": [
         {
           "title": "Title",
@@ -22,6 +24,12 @@
           "type": "datetime",
           "default": "{{now}}",
           "isPublishDate": true
+        },
+        {
+          "title": "Last modified date",
+          "name": "lastmod",
+          "type": "datetime",
+          "isModifiedDate": true
         },
         {
           "title": "Content preview",
@@ -42,6 +50,16 @@
           "title": "Categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "layout",
+          "name": "layout",
+          "type": "choice",
+          "multiple": false,
+          "choices": [
+            "post",
+            "page"
+          ]
         }
       ]
     }
@@ -53,5 +71,20 @@
       "title": "_posts",
       "path": "[[workspace]]/_posts"
     }
+  ],
+  "frontMatter.taxonomy.tags": [],
+  "frontMatter.taxonomy.categories": [
+    " ",
+    "a",
+    "d",
+    "e",
+    "j",
+    "jekyll",
+    "k",
+    "l",
+    "p",
+    "t",
+    "u",
+    "y"
   ]
 }

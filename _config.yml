@@ -18,21 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Karenkun
+email: karenkun@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi this is Karen's website WIP.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://design.karenlo.ca" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: k4ren
+github_username: karenkun
 
 # Build settings
-theme: minima
+theme: "minima"
 plugins:
   - jekyll-feed
+
+sass:
+  sass_dir: _sass
+  style: expanded #compressed or expanded
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +55,16 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "base"
+  - scope:
+      path: "projects"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "project" # overrides previous default layout
+      author: "KLO"
