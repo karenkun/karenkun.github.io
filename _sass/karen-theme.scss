@@ -1,5 +1,30 @@
 /* karen-theme */
+$base-font-size: 18px;
+$small-font: calc($base-font-size*0.75);
+
+body {
+    font-size: $base-font-size;
+}
 
 h1, h2, h3, h4, h5 {
     color: inherit;
+}
+
+
+.post-meta {
+    font-size: $small-font;
+}
+
+.post-list,
+.social-media-list,
+.contact-list {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.svg-icon {
+    width: $base-font-size;
+    height: $base-font-size;
+    display: inline-block;
+    fill: #828282;
 }
