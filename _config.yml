@@ -29,6 +29,10 @@ github_username: karenkun
 
 # Build settings
 theme: "minima"
+minima:
+  skin: solarized-dark
+  # https://github.com/jekyll/minima#skins
+
 plugins:
   - jekyll-feed
 
