@@ -1,7 +1,6 @@
 {
   "frontMatter.preview.host": "http://127.0.0.1:4000/",
   "[markdown]": {
-    "editor.fontSize": 14,
     "editor.lineHeight": 26,
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 64,

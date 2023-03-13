@@ -6,6 +6,7 @@ lastmod: 2023-03-12T22:59:10.833Z
 preview: ""
 tags: ""
 categories: ""
+type: post
 layout: post
 ---
 
@@ -14,7 +15,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 This is a service that generates images: <a href="https://picsum.photos" target="_blank">Lorem Picsum</a>
 
 For example: `https://picsum.photos/id/10/400/600?grayscale` will be an image that is 400 x 600 and grayscale... 10 is the image id from their gallery.
-
 
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" 
     uk-slider="sets: true; center: true;" 

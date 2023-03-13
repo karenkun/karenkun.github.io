@@ -2,7 +2,7 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.taxonomy.contentTypes": [
     {
-      "name": "default",
+      "name": "post",
       "pageBundle": false,
       "previewPath": null,
       "fileType": "markdown",
@@ -60,6 +60,16 @@
             "post",
             "page"
           ]
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "choice",
+          "multiple": false,
+          "choices": [
+            "post",
+            "page"
+          ]
         }
       ]
     }
@@ -68,8 +78,12 @@
   "frontMatter.content.publicFolder": "assets",
   "frontMatter.content.pageFolders": [
     {
-      "title": "_posts",
-      "path": "[[workspace]]/_posts"
+      "title": "post",
+      "path": "[[workspace]]/_posts",
+      "previewPath": "yyyy/MM/dd",
+      "contentTypes": [
+        "post"
+      ]
     }
   ],
   "frontMatter.taxonomy.tags": [],
