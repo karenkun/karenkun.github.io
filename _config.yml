@@ -28,7 +28,6 @@ twitter_username: k4ren
 github_username: karenkun
 
 # Build settings
-remote_theme: jekyll/minima
 theme: "minima"
 minima:
   skin: auto
@@ -36,7 +35,6 @@ minima:
 
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 
 sass:
   sass_dir: _sass
