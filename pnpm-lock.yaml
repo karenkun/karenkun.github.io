@@ -1,0 +1,13 @@
+lockfileVersion: 5.4
+
+specifiers:
+  uikit: ^3.16.6
+
+dependencies:
+  uikit: 3.16.6
+
+packages:
+
+  /uikit/3.16.6:
+    resolution: {integrity: sha512-xVaCDh9LmCqMOmXfKvZyOyWW5dhym7aVTLNMTiKPnraaACl3szN4OSBTsGzi8DLIN/ntQS6G3Hqi+iEjHop1Uw==}
+    dev: false

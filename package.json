@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/karenkun/karenkun.github.io/issues"
   },
-  "homepage": "https://github.com/karenkun/karenkun.github.io#readme"
+  "homepage": "https://github.com/karenkun/karenkun.github.io#readme",
+  "dependencies": {
+    "uikit": "^3.16.6"
+  }
 }
