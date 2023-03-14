@@ -28,14 +28,15 @@ twitter_username: k4ren
 github_username: karenkun
 
 # Build settings
-theme: "minima"
-minima:
-  # skin: auto
-  # https://github.com/jekyll/minima#skins
+# theme: "minima"
+#minima:
+# skin: auto
+# https://github.com/jekyll/minima#skins
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 sass:
   sass_dir: _sass
