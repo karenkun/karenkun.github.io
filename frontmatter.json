@@ -32,6 +32,12 @@
           "isModifiedDate": true
         },
         {
+          "title": "Slug date",
+          "name": "slugdate",
+          "type": "string",
+          "default": "{{year}}/{{month}}/{{day}}"
+        },
+        {
           "title": "Content preview",
           "name": "preview",
           "type": "image"
@@ -47,9 +53,65 @@
           "type": "tags"
         },
         {
-          "title": "Categories",
+          "title": "Categories (limit 1)",
           "name": "categories",
-          "type": "categories"
+          "type": "categories",
+          "default" : "general"
+        },
+        {
+          "title": "Page Layout",
+          "name": "layout",
+          "type": "choice",
+          "multiple": false,
+          "choices": [
+            "post",
+            "page"
+          ],
+          "default": "post"
+        },
+        {
+          "title": "Type",
+          "name": "type",
+          "type": "string",
+          "default": "post"
+        },
+        {
+          "title": "Slug (matches filename)",
+          "name": "slug",
+          "type": "string",
+          "default": "{{slug}}"
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "pageBundle": false,
+      "previewPath": null,
+      "fileType": "markdown",
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Last modified date",
+          "name": "lastmod",
+          "type": "datetime",
+          "isModifiedDate": true
         },
         {
           "title": "layout",
@@ -59,17 +121,30 @@
           "choices": [
             "post",
             "page"
-          ]
+          ],
+          "default": "page"
         },
         {
           "title": "type",
           "name": "type",
-          "type": "choice",
-          "multiple": false,
-          "choices": [
-            "post",
-            "page"
-          ]
+          "type": "string",
+          "default": "page"
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "string",
+          "default": "{{slug}}"
+        },
+        {
+          "title": "Order",
+          "name": "order",
+          "type": "number"
+        },
+        {
+          "title": "permalink",
+          "name": "permalink",
+          "type": "string"
         }
       ]
     }
@@ -80,7 +155,7 @@
     {
       "title": "post",
       "path": "[[workspace]]/_posts",
-      "previewPath": "yyyy/MM/dd",
+      "previewPath": "{{fm.categories}}/{{fm.slugdate}}",
       "contentTypes": [
         "post"
       ]
@@ -92,6 +167,7 @@
     "a",
     "d",
     "e",
+    "general",
     "j",
     "jekyll",
     "k",

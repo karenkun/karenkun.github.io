@@ -6,10 +6,15 @@ body {
     font-size: $base-font-size;
 }
 
-h1, h2, h3, h4, h5 {
-    color: inherit;
+.page-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
+// override minima, eventually need to delete the below
+h1, h2, h3, h4, h5, a:visited {
+    color: inherit;
+}
 
 .post-meta {
     font-size: $small-font;

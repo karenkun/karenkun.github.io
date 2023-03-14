@@ -1,0 +1,46 @@
+{%- if titles_size > 0 -%}
+<nav class="uk-navbar-container">
+  <div class="uk-container">
+      <div uk-navbar>
+        <div class="uk-navbar-left">
+          <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        </div>
+        <div class="uk-navbar-right">
+          <a class="uk-navbar-toggle uk-hidden@s" 
+            uk-navbar-toggle-icon 
+            uk-toggle 
+            href="#mobile-menu"
+            ></a>
+          <ul class="uk-navbar-nav uk-visible@s">
+            {%- for path in page_paths -%}
+              {%- assign my_page = site.pages | where: "path", path | first -%}
+              {%- if my_page.title -%}
+                <li class="uk-flex" style="order: {{my_page.order}}">
+                  <a class="" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </div>
+      </div>
+  </div>
+</nav>
+
+<div id="mobile-menu" uk-offcanvas="flip:true">
+  <div class="uk-offcanvas-bar">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <ul class="uk-nav uk-nav-center uk-flex uk-flex-column">
+      <li class="uk-nav-header">Menu</li>
+      <li class="uk-nav-divider"></li>
+      {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+          <li class="uk-flex" style="order: {{my_page.order}}">
+            <a class="uk-text-size-large" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+{%- endif -%}
