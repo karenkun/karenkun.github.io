@@ -18,6 +18,6 @@ order: 0
             Design Ops<Br/>
             CSS front-end doctor
         </p>
-        <p class="uk-text-small">Find me: <a href="https://www.linkedin.com/in/lokaren/" target="blank">LinkedIn</a> | <a href="mailto:design@karenlo.ca">Email</a></p>
+        <p class="uk-text-small"><a class="uk-button uk-button-default uk-margin-small-right" href="https://www.linkedin.com/in/lokaren/" target="blank"><span uk-icon="chevron-right" class="uk-icon"></span>LinkedIn</a><a class="uk-button uk-button-default" href="mailto:design@karenlo.ca"><span uk-icon="mail" class="uk-icon"></span>Contact</a></p>
     </div>
 </center>
