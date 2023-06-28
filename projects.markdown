@@ -2,11 +2,8 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: torso
-title: Home
+layout: posts-index
+title: Projects
 type: page
 order: 0
 ---
-
-<p>Coming soon</p>
-<p><a href="https://www.linkedin.com/in/lokaren/" target="blank">About me</p>
