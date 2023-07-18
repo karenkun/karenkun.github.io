@@ -22,5 +22,7 @@ order: 0
             <a class="uk-button uk-button-default uk-margin-small-right"  uk-icon="icon: chevron-right" href="https://www.linkedin.com/in/lokaren/" target="blank">LinkedIn</a>
             <a class="uk-button uk-button-default" uk-icon="icon: mail" href="mailto:design@karenlo.ca">Contact</a>
         </p>
+        <p>Portfolio website coming soon
+        </p>
     </div>
 </center>
