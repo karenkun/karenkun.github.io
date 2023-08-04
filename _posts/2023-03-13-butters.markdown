@@ -6,9 +6,11 @@ lastmod: 2023-03-14T00:54:55.595Z
 slugdate: 2023/03/13
 preview: null
 draft: true
-tags: ""
-categories: general
-layout: post
+tags:
+  - featured
+  - general
+categories: work
+layout: project
 type: post
 slug: butters
 ---

@@ -4,7 +4,7 @@
     {
       "name": "post",
       "pageBundle": false,
-      "previewPath": null,
+      "previewPath": "{{fm.categories}}/",
       "fileType": "markdown",
       "filePrefix": "YYYY-MM-DD",
       "fields": [
@@ -56,7 +56,7 @@
           "title": "Categories (limit 1)",
           "name": "categories",
           "type": "categories",
-          "default" : "general"
+          "default": "work"
         },
         {
           "title": "Page Layout",
@@ -65,7 +65,10 @@
           "multiple": false,
           "choices": [
             "post",
-            "page"
+            "page-with-title",
+            "base",
+            "base-dark",
+            "project"
           ],
           "default": "post"
         },
@@ -120,7 +123,10 @@
           "multiple": false,
           "choices": [
             "post",
-            "page"
+            "page-with-title",
+            "base",
+            "base-dark",
+            "project"
           ],
           "default": "page"
         },
@@ -161,20 +167,14 @@
       ]
     }
   ],
-  "frontMatter.taxonomy.tags": [],
+  "frontMatter.taxonomy.tags": [
+    "custom-a",
+    "featured",
+    "general"
+  ],
   "frontMatter.taxonomy.categories": [
-    " ",
-    "a",
-    "d",
-    "e",
+    "frontend",
     "general",
-    "j",
-    "jekyll",
-    "k",
-    "l",
-    "p",
-    "t",
-    "u",
-    "y"
+    "work"
   ]
 }

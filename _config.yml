@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: karenlo.ca
-email: karenkun@gmail.com
+title: Karen Lo - Full-stack UX Product Designer
+email: design@karenlo.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi this is Karen's website WIP.
+  Karen Lo Full-stack  Product & UX Designer based in Vancouver, Canada.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://design.karenlo.ca" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.karenlo.ca" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: k4ren
 github_username: karenkun
 
@@ -40,7 +40,7 @@ plugins:
 
 sass:
   sass_dir: _sass
-  style: expanded #compressed or expanded
+  style: compressed #compressed or expanded
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -65,7 +65,7 @@ sass:
 defaults:
   - scope:
       path: ""
-      type: "pages"
+      type: "pages" #pages are in the root
     values:
       layout: "base"
   - scope:
@@ -74,3 +74,5 @@ defaults:
     values:
       layout: "project" # overrides previous default layout
       author: "KLO"
+
+permalink: /:categories/:title

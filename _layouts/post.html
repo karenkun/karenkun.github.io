@@ -1,10 +1,16 @@
 ---
 layout: base
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post h-entry uk-container uk-container-xsmall uk-card uk-card-body uk-card-default" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
+    <div>
+      {% for tag in post.tags %}
+        <span class="uk-label tag-{{tag}}">{{tag}}</span>
+      {% endfor %}
+    </div>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    
     <p class="post-meta">
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">

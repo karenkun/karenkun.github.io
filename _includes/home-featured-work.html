@@ -1,0 +1,40 @@
+<section class="uk-container uk-container-xsmall featured-work" uk-scrollspy="cls:uk-animation-fade">
+    <h2 class="uk-text-center uk-container">Featured Work</h2>
+    <ul class="uk-list uk-dark">
+    {% for post in site.tags.featured %}
+        <li class="uk-card uk-card-default uk-child-width-1-2@s" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <a href="{{ post.url | relative_url }}">
+                {%- if post.preview and post.preview != '' -%}
+                    <img src="/assets/{{post.preview}}" alt="{{post.title}}" uk-cover>
+                {%- else -%}
+                    <img src="https://picsum.photos/id/39/600/609?grayscale" alt="{{post.title}}" uk-cover>
+                {%- endif -%}
+            </a>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div class="uk-card-body">
+                <a href="{{ post.url | relative_url }}" class="uk-link-reset"> 
+                    <h3 class="uk-card-title uk-margin-small">
+                        {{ post.title | escape }}
+                    </h3>
+                    <div class="uk-text-small">
+                    <!-- show description if there is one, otherwise use the excerpt from content body -->
+                        {%- if post.description.size > 1 -%}
+                            {{ post.description }}  
+                        {%- else -%}
+                            {{ post.excerpt }}
+                        {%- endif -%}
+                    </div>
+                    {% for tag in post.tags %}
+                        <span class="uk-label tag-{{tag}}">{{tag}}</span>
+                    {% endfor %}
+                </a>
+            </div>
+        </li>
+    {%- endfor -%}
+    </ul>
+    <div class="uk-text-center uk-margin-medium">
+        <a class="uk-button uk-button-default" href="work">More</a>
+    </div>
+</section>

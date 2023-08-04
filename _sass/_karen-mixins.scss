@@ -1,0 +1,11 @@
+
+@mixin fade-in-on-hover($property: opacity, $speed: 300ms, $opacity-percent: 0.6){
+    opacity: $opacity-percent;
+    transition: $property $speed ease-in-out;
+    -webkit-transition: $property $speed ease-in-out;
+    filter: grayscale(1);
+    &:hover {
+        opacity: 1;
+        filter: grayscale(0);
+    }
+}

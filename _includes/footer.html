@@ -1,8 +1,17 @@
-<footer class="uk-section uk-section-muted uk-section-small uk-text-small">
-    <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer class="uk-section uk-section-small uk-text-small">
+    <data class="u-url" href="{{ '/' | relative_url }}"></data>
   
-    <div class="uk-container">
-      <h3>Bye</h3>
+    <div class="uk-container uk-text-center">
+      {%- include social.html -%}
+      
+      <p class="uk-text-small uk-text-muted">
+        I built this website using markdown, HTML, CSS, and JS using Jekyll and GitHub Pages. Frontend web development has been in my back pocket for 15+ years so developers call me the CSS wizard of HTML land.
+      </p>
+    </div>
+
+    {% comment %}
+     <div class="uk-container">
+      <h3>Footer</h3>
       <div class="uk-grid uk-child-width-1-3@m">
         <div>
           <p class="feed-subscribe">
@@ -30,9 +39,7 @@
           {%- include social.html -%}
         </div>
       </div>
-  
-      
-  
     </div>
+    {% endcomment %}
   
   </footer>

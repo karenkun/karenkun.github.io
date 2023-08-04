@@ -4,10 +4,12 @@ description: Slider carousel example
 date: 2023-03-12T22:59:10.833Z
 lastmod: 2023-03-12T22:59:10.833Z
 preview: ""
-tags: ""
-categories: general
+tags:
+  - featured
+categories:
+  - frontend
 type: post
-layout: post
+layout: project
 slug: fancy
 slugdate: 2023/03/13
 ---

@@ -5,9 +5,10 @@ date: 2023-03-13T23:01:09.550Z
 lastmod: 2023-03-13T23:01:09.550Z
 preview: ""
 draft: true
-tags: ""
-categories: general
-layout: post
+tags:
+  - custom-a
+categories: work
+layout: project
 type: post
 slug: coffee
 slugdate: 2023/03/13
