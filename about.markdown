@@ -1,7 +1,6 @@
 ---
 layout: page-with-title
 title: About
-permalink: /about/
 type: page
 order: 2
 slug: about

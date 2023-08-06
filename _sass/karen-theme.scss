@@ -188,6 +188,17 @@ h4 {
     display: inline-block;
     fill: #828282;
 }
+fieldset {
+    border: 0;
+}
+
+.contact-form {
+    border: 1px solid $white-02;
+    font-size: $base-font-size;
+    .uk-input, .uk-textarea { 
+        color: $font-strong-light-color !important ;
+    }
+}
 
 .uk-card {
     h3 { margin-left: 0;}
@@ -405,6 +416,17 @@ h4 {
 /* ------------------------------------ WORK */    
 .page-work {
     background-color: $brand-light;
+}
+
+.page-contact {
+    background-color: $brand-light;
+    .page-content { padding: 0 1rem;}
+}
+
+.contact-form-container {
+    width: 640px;
+    height: 560px;
+    border: 0;
 }
 
 

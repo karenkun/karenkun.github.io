@@ -1,9 +1,14 @@
-<iframe src="/contact" frameborder="0" class="uk-width-1-2@s uk-align-center  contact-form-container"></iframe>
+---
+layout: bare
+title: Contact
+permalink: contact
+type: page
+order: 99
+slug: contact
+show_in_nav: false
+---
 
-
-{% comment %}
-
-<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdorarvd" method="post" class="uk-card uk-width-1-2@s uk-align-center contact-form">
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdorarvd" method="post" class="uk-card contact-form">
   <div class="uk-card-body">
     <h3>
       <span uk-icon="comment" class="inline-icon uk-margin-right"></span>Contact Me
@@ -26,4 +31,3 @@
     <input type="submit" value="Submit" class="uk-button uk-button-default uk-margin">
   </div>
 </form>
-{% endcomment %}

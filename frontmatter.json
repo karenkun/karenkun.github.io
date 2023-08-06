@@ -151,6 +151,12 @@
           "title": "permalink",
           "name": "permalink",
           "type": "string"
+        },
+        {
+          "title": "show_in_nav",
+          "name": "show_in_nav",
+          "type": "boolean",
+          "default": "true"
         }
       ]
     }

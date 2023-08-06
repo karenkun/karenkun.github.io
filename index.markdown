@@ -8,7 +8,7 @@ slug: home
 
 <div class="uk-container uk-container-xsmall uk-margin-large-top uk-animation-fade">
     <div uk-grid class="uk-grid-medium uk-margin-large-bottom">
-        <div class="uk-width-auto"><img src="/assets/content-images/profile.jpg" width="150" class="uk-border-circle  uk-height-max-small"></div>
+        <div class="uk-width-auto"><img src="/assets/content-images/profile.jpg" width="150" class="uk-border-circle  uk-height-max-small" alt="photo"></div>
         <h1>
             Hi <br> I'm Karen</h1>
     </div>
@@ -16,25 +16,25 @@ slug: home
     <p class="uk-text-lead home-intro">
         I’m a
         <span>
-            <a class="uk-button uk-button-text">full-stack designer</a>
+            <a class="uk-button uk-button-text" tabindex="5">full-stack designer</a>
             <span uk-dropdown>I wear many hats beyond a UX designer: UI, product design, user testing, user research, visual design, frontend web design, to name some...</span>
         </span>
          with over 15 years of experience helping startups to larger businesses bring their product vision from
          <span>
-            <a class="uk-button uk-button-text">zero-to-one</a>
+            <a class="uk-button uk-button-text" tabindex="6">zero-to-one</a>
             <span uk-dropdown>Early stage product design and development where the problem space is ripe but the solution isn't finalized. It often requires creative problem-solving, smart prioritization/pivoting, multi-disciplinary skills and systems design thinking.</span>
         </span>. I specialize in experience design,
          <span>
-            <a class="uk-button uk-button-text">innovative industries</a>
+            <a class="uk-button uk-button-text" tabindex="7">innovative industries</a>
             <span uk-dropdown>Finance, government, real estate, medical, insurance, e-commerce, cryptocurrency, marketplaces, business intelligence, task management, user/customer relationship management, analytics, and workflow management.
             </span>
         </span>,
         <span>
-            <a class="uk-button uk-button-text">prototyping</a>
+            <a class="uk-button uk-button-text" tabindex="8">prototyping</a>
             <span uk-dropdown>I always create clickable design prototypes so we can gather the best feedback early in the process. No static screens here.</span>
         </span>,
         <span>
-            <a class="uk-button uk-button-text">ethnography</a>
+            <a class="uk-button uk-button-text" tabindex="9">ethnography</a>
             <span uk-dropdown>Studying human behaviour, culture, in context is key to successful human-centered design.</span>
         </span>, and data visualization.
 
@@ -42,7 +42,7 @@ slug: home
 
     <p class="uk-text-lead home-intro">
         In my leisure time, I love solving
-        <span><a class="uk-button uk-button-text">usability problems for my rabbit</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle" width="100">She's a sassy 2lb diva named Butter Scotch.</span></span>
+        <span><a class="uk-button uk-button-text" tabindex="10">usability problems for my rabbit</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle" width="100">She's a sassy 2lb diva named Butter Scotch.</span></span>
         , planning travel experiences for others, people watching and learning languages.
     </p>
 
