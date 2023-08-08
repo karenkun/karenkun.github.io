@@ -45,6 +45,7 @@ body {
 strong { font-weight: 700;}
 p { 
     font-weight: 300;
+    letter-spacing: 0.04em;
     a { font-weight: 700;}
 }
 
@@ -119,13 +120,13 @@ h4,h5 { font-weight: 400;}
 
 h1 { 
     @media (min-width: 768px){
-        font-size: 4.5rem; 
+        font-size: 5.1875rem; 
     }
 }
 
 h2 { 
     @media (min-width: 768px){
-        font-size: 2.5rem;
+        font-size: 3.1325rem;
     }
     @media (min-width: 1000px){
         transition: margin 300ms ease-in-out;
@@ -136,7 +137,7 @@ h2 {
 
 h3 { 
     @media (min-width: 768px){
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
     @media (min-width: 1000px){
         transition: margin 300ms ease-in-out;
@@ -146,7 +147,15 @@ h3 {
 }
 h4 { 
     @media (min-width: 768px){
-        font-size: 1.125rem;
+        font-size: 1.625rem;
+    }
+}
+
+h5 { 
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    @media (min-width: 768px){
+        font-size: 1.25rem;
     }
 }
 
@@ -200,6 +209,7 @@ fieldset {
     }
 }
 
+
 .uk-card {
     h3 { margin-left: 0;}
 
@@ -212,6 +222,11 @@ fieldset {
         bottom: 0;
         left: 0;;
     }
+}
+
+.uk-light .uk-card-default {
+    background: $white-04;
+    color: white;
 }
 
 .uk-tooltip {
@@ -254,7 +269,8 @@ fieldset {
     }
     .uk-dropdown {
         width: 30em;
-        font-size: $font-size-sm;
+        font-size: $font-size-medium;
+        font-weight: 400;
     }
 }
 

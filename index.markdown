@@ -17,21 +17,21 @@ slug: home
         I’m a
         <span>
             <a class="uk-button uk-button-text" tabindex="5">full-stack designer</a>
-            <span uk-dropdown>I wear many hats beyond a UX designer: UI, product design, user testing, user research, visual design, frontend web design, to name some...</span>
+            <span uk-dropdown>I wear many hats beyond a user experience designer: UI, product design, user testing, user research, visual design, frontend web design, to name some...</span>
         </span>
          with over 15 years of experience helping startups to larger businesses bring their product vision from
          <span>
             <a class="uk-button uk-button-text" tabindex="6">zero-to-one</a>
-            <span uk-dropdown>Early stage product design and development where the problem space is ripe but the solution isn't finalized. It often requires creative problem-solving, smart prioritization/pivoting, multi-disciplinary skills and systems design thinking.</span>
+            <span uk-dropdown>From ideation to production – early stage product design and development where the problem space is ripe but the solution isn't finalized. It often requires creative problem-solving, smart prioritization/pivoting, multi-disciplinary skills and systems design thinking.</span>
         </span>. I specialize in experience design,
          <span>
             <a class="uk-button uk-button-text" tabindex="7">innovative industries</a>
-            <span uk-dropdown>Finance, government, real estate, medical, insurance, e-commerce, cryptocurrency, marketplaces, business intelligence, task management, user/customer relationship management, analytics, and workflow management.
+            <span uk-dropdown>Finance (fintech), AI, quantum computing, real estate, health care, insurance, e-commerce, digital currency, marketplaces, business intelligence, task management, user/customer relationship management, analytics, and workflow management.
             </span>
         </span>,
         <span>
             <a class="uk-button uk-button-text" tabindex="8">prototyping</a>
-            <span uk-dropdown>I always create clickable design prototypes so we can gather the best feedback early in the process. No static screens here.</span>
+            <span uk-dropdown>The sooner we can test, the sooner we can validate ideas. I always create clickable design prototypes so we can gather the best feedback early in the process. No static screens here.</span>
         </span>,
         <span>
             <a class="uk-button uk-button-text" tabindex="9">ethnography</a>
@@ -42,8 +42,8 @@ slug: home
 
     <p class="uk-text-lead home-intro">
         In my leisure time, I love solving
-        <span><a class="uk-button uk-button-text" tabindex="10">usability problems for my rabbit</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle" width="100">She's a sassy 2lb diva named Butter Scotch.</span></span>
-        , planning travel experiences for others, people watching and learning languages.
+        <span><a class="uk-button uk-button-text" tabindex="10">usability problems for my rabbit</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy AB testing treats and giving quantitative feedback (rather than qualitative). Actions speak louder than words ... seeing as I'm a rabbit.</span></span>
+        , planning travel experiences for others, people-watching and learning languages.
     </p>
 
     <div uk-grid class="uk-grid-small uk-child-width-auto@s uk-child-width-1-1 uk-text-default">
@@ -53,7 +53,7 @@ slug: home
 
         <div>
             <span class="inline-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" height="20" width="20" alt="headcap">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
                 </svg>
             </span> BSc. Interaction Design
