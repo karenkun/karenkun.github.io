@@ -1,103 +1,112 @@
-<section class="quotes-slider uk-container uk-container-large uk-margin-top" uk-scrollspy="target: ul > li ; delay: 100; cls:uk-animation-slide-bottom-medium">
-    <div uk-slider="autoplay: true, center: true">
-        <div class="uk-position-relative">
-            <div class="uk-slider-container">
-                <ul class="uk-slider-items uk-child-width-1-1  uk-child-width-1-2@s uk-child-width-1-4@m uk-child-width-1-5@l">
-                    <li>
-                        <div class="uk-card">
-                            <p>I know I can count on Karen to run with lean requirements and produce product ideas and specs that can be user-tested for viability before we get the dev team involved.</p>
-                            <span class="uk-text-uppercase">Product Manager</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>She's pragmatic, efficient, detail-oriented and consistently poses essential "why" questions to ensure that we're building the right thing for the right reasons.</p>
-                            <span class="uk-text-uppercase">Product Manager</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>Karen designed features in such a way so that they could be progressively built in an Agile fashion and deliver product value through different phases of the roadmap before its final ideal end state.</p>
-                            <span class="uk-text-uppercase">Product Manager</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>She discovered new product opportunities through her user journey mapping and user interviews, which we had not thought of.</p>
-                            <span class="uk-text-uppercase">Product Manager</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>Karen helped reduce the time it takes for developer handoff by producing detailed designs and specs that follow web accessibility and don't break the internet</p>
-                            <span class="uk-text-uppercase">VP of Engineering</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>Karen is a problem-solver and offered creative solutions within our technical constraints that we hadn't thought of.</p>
-                            <span class="uk-text-uppercase">Stakeholder</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>Karen picks up new domain knowledge quickly, she's a fast learner and a good listener.</p>
-                            <span class="uk-text-uppercase">Service Delivery Team</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>Thanks to the fast design turnaround and implementation assistance, we were able to garner investor support and receive user feedback earlier in the product development process. </p>
-                            <span class="uk-text-uppercase">Business Stakeholder</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>You really listened to our feedback and tangibly applied it to the designs. This feature set is powerful and intuitive, and it'll reduce our current overhead and workload. This was exactly what we needed.</p>
-                            <span class="uk-text-uppercase">Stakeholder</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>I learned so much from Karen – she's patient, knowledgeable and is good at explaining complex topics.</p>
-                            <span class="uk-text-uppercase">Junior UX Designer</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>You have a sharp eye for detail and gave me good pointers and reminders on how to design more efficiently.</p>
-                            <span class="uk-text-uppercase">Fellow UX Designer</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>Awesome designer to work with whose front-end background helped expedite our development cycle by creating designs that seamlessly integrated with our existing tech stack.</p>
-                            <span class="uk-text-uppercase">Software Engineer</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>Working with you was a blast and you are so good at what you do. You definitely made my job easier by making all those good design/UI/UX decisions. You also brought a lot of positivity to our workspace (both online and offline).</p>
-                            <span class="uk-text-uppercase">Full-stack Developer</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card">
-                            <p>The UX and UI designs were well thought out and reduced the number of edge cases we had to account for.</p>
-                            <span class="uk-text-uppercase">Lead Developer</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="uk-hidden@s uk-light">
-                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            </div>
-            <div class="uk-visible@s">
-                <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            </div>
-        </div>
-    </div>
-
+<section class="quotes-slider uk-container uk-container-large uk-margin-top">
+	<div uk-slider="autoplay: true, center: true">
+		<div class="uk-position-relative">
+			<div class="uk-slider-container"  uk-scrollspy="target: ul > li ; delay: 100; cls:uk-animation-slide-bottom-medium">
+				<ul id="quotes-list" class="js-randomize-this uk-slider-items uk-child-width-1-1  uk-child-width-1-2@s uk-child-width-1-4@m uk-child-width-1-5@l">
+					<li>
+						<div class="uk-card">
+							<p>I know I can count on Karen to run with lean requirements and produce product ideas and specs that can be user-tested for viability before we get the dev team involved.</p>
+							<span class="uk-text-uppercase">Product Manager</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>She's pragmatic, efficient, detail-oriented and consistently poses essential "why" questions to ensure that we're building the right thing for the right reasons.</p>
+							<span class="uk-text-uppercase">Product Manager</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>Karen designed features in such a way so that they could be progressively built in an Agile fashion and deliver product value through different phases of the roadmap before its final ideal end state.</p>
+							<span class="uk-text-uppercase">Product Manager</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>She discovered new product opportunities through her user journey mapping and user interviews, which we had not thought of.</p>
+							<span class="uk-text-uppercase">Product Manager</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>Karen helped reduce the time it takes for developer handoff by producing detailed designs and specs that follow web accessibility and don't break the internet</p>
+							<span class="uk-text-uppercase">VP of Engineering</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>Karen is a problem-solver and offered creative solutions within our technical constraints that we hadn't thought of.</p>
+							<span class="uk-text-uppercase">Stakeholder</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>Karen picks up new domain knowledge quickly, she's a fast learner and a good listener.</p>
+							<span class="uk-text-uppercase">Service Delivery Team</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>Thanks to the fast design turnaround and implementation assistance, we were able to garner investor support and receive user feedback earlier in the product development process. </p>
+							<span class="uk-text-uppercase">Business Stakeholder</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>You really listened to our feedback and tangibly applied it to the designs. This feature set is powerful and intuitive, and it'll reduce our current overhead and workload. This was exactly what we needed.</p>
+							<span class="uk-text-uppercase">Stakeholder</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>I learned so much from Karen – she's patient, knowledgeable and is good at explaining complex topics.</p>
+							<span class="uk-text-uppercase">Junior UX Designer</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>You have a sharp eye for detail and gave me good pointers and reminders on how to design more efficiently.</p>
+							<span class="uk-text-uppercase">Fellow UX Designer</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>Awesome designer to work with whose front-end background helped expedite our development cycle by creating designs that seamlessly integrated with our existing tech stack.</p>
+							<span class="uk-text-uppercase">Software Engineer</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>Working with you was a blast and you are so good at what you do. You definitely made my job easier by making all those good design/UI/UX decisions. You also brought a lot of positivity to our workspace (both online and offline).</p>
+							<span class="uk-text-uppercase">Full-stack Developer</span>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card">
+							<p>The UX and UI designs were well thought out and reduced the number of edge cases we had to account for.</p>
+							<span class="uk-text-uppercase">Lead Developer</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="uk-hidden@s uk-light">
+					<a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+					<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+			</div>
+			<div class="uk-visible@s">
+					<a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+					<a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+			</div>
+		</div>
+	</div>
 </section>
+
+<script>
+	// randomize the order of quotes on page load
+	window.onload = () => {
+		var ul = document.querySelector('#quotes-list');
+		for (var i = ul.children.length; i >= 0; i--) {
+				ul.appendChild(ul.children[Math.random() * i | 0]);
+		}
+	}
+</script>

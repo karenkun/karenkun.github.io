@@ -15,7 +15,9 @@ $font-size-medium: 1rem;
 $font-size-sm: 0.875rem;
 $font-size-xs: 0.75rem;
 
-
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
 
 
 $font-strong-light-color: white;
@@ -31,7 +33,7 @@ $white-04: rgba(255,255,255,.05);
 body {
     font-size: $base-font-size;
     font-family: "Sofia Pro", "Helvetica", "Arial", sans-serif;
-    font-weight: 300;
+    font-weight: $font-weight-light;
 
     @media (min-width: 1400px){
         font-size: 22px;
@@ -42,11 +44,11 @@ body {
     }
 }
 
-strong { font-weight: 700;}
+strong { font-weight: $font-weight-bold;}
 p { 
-    font-weight: 300;
+    font-weight: $font-weight-light;
     letter-spacing: 0.04em;
-    a { font-weight: 700;}
+    a { font-weight: $font-weight-bold;}
 }
 
 
@@ -57,7 +59,7 @@ p {
     >li>a { 
         min-height: auto;
         font-family: inherit;
-        font-weight: 400;
+        font-weight: $font-weight-normal;
         letter-spacing: 0.125em;
     }
 }
@@ -106,21 +108,28 @@ p {
     margin-top: 10%;
 }
 
+// can be used anywhere I want to set a specific background colour
+.bg-brand-dark 		{ background-color: $brand-dark;}
+.bg-brand-medium 	{ background-color: $brand-medium;}
+.bg-brand-light	 	{ background-color: $brand-light;}
+.bg-brand-lighter { background-color: $brand-lighter;}
+
 
 // override minima, eventually need to delete the below
 h1, h2, h3, h4, h5  {
     // color: inherit;
     font-family: "Nexa", sans-serif;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     letter-spacing: 0.125rem;
     margin-bottom: 1.25em;
 }
-h4,h5 { font-weight: 400;}
+h4,h5 { font-weight: $font-weight-normal;}
 
 
+// heading font sizing
 h1 { 
     @media (min-width: 768px){
-        font-size: 5.1875rem; 
+        font-size: 5rem; 
     }
 }
 
@@ -137,7 +146,7 @@ h2 {
 
 h3 { 
     @media (min-width: 768px){
-        font-size: 2.25rem;
+        font-size: 2.125rem;
     }
     @media (min-width: 1000px){
         transition: margin 300ms ease-in-out;
@@ -152,13 +161,38 @@ h4 {
 }
 
 h5 { 
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     letter-spacing: 0.04em;
     @media (min-width: 768px){
         font-size: 1.25rem;
     }
 }
 
+h6 {
+	font-weight: $font-weight-normal;
+	font-size: $base-font-size;
+	letter-spacing: 0.08em;
+	font-family: inherit;	
+	margin-bottom: 0.25em;
+}
+
+
+/* ------------------------------------ COMPONENTS */
+
+a {
+	img.fade-in-hover { 
+		opacity: 0.5;
+		border: 1px solid transparent;
+	}
+
+	&:hover {
+		img.fade-in-hover {
+			opacity: 1;
+			transition: opacity 300ms ease-in-out ;
+			border: 1px solid $white-03;
+		}
+	}
+}
 
 .uk-button-link{
     font-family: inherit;
@@ -168,7 +202,7 @@ h5 {
     color: $white-02;
     font-family: inherit;
     font-size: inherit;
-    font-weight: 400;
+    font-weight: $font-weight-normal;
     line-height: inherit;
     text-transform: inherit;
     display: inline;
@@ -178,6 +212,21 @@ h5 {
 .uk-dropdown {
     font-size: $base-font-size;
     padding: 1em;
+}
+
+
+// reset modal text colour
+.uk-light .uk-modal {
+	h1, h2, h3, h4, h5, p, a, span, strong, ul,.uk-close  {
+		color: $brand-dark;
+	}
+	&.uk-modal-full { 
+		background-color: white;
+	}
+
+	h1, h2, h3 {
+		margin-left: 0;
+	}
 }
 
 .post-meta {
@@ -222,20 +271,24 @@ fieldset {
         bottom: 0;
         left: 0;;
     }
-}
+}	
 
-.uk-light .uk-card-default {
-    background: $white-04;
-    color: white;
+// basic card style
+.subtle-card {
+	background-color: $white-04;
+	padding: 1em;
+	font-size: $base-font-size;
 }
 
 .uk-tooltip {
     background-color: $brand-light;
 }
 
-.inline-icon svg{
-    height: 1em;
-    width: 1em;
+.inline-icon {
+    display: inline-block;
+    &.icon-academic-cap svg {
+        margin-top: -3px;
+    }
 }
 
 
@@ -270,7 +323,7 @@ fieldset {
     .uk-dropdown {
         width: 30em;
         font-size: $font-size-medium;
-        font-weight: 400;
+        font-weight: $font-weight-normal;
     }
 }
 
@@ -281,18 +334,18 @@ fieldset {
     background: rgba(0,0,0,0.3);
     padding-top: 3%;
     padding-bottom: 3%;
-
     user-select: none;
     -webkit-user-select: none;
 
     .logo-image {
-        opacity: 0.5;
-        width: 4em;
-        height: 2em;
+        opacity: 0.35;
+        width: 5.5em;
+        height: 2.5em;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0.625em;
+				transform: scale(0.7);
 
 
         // dark logo
@@ -365,7 +418,7 @@ fieldset {
     .logo-image {
         background-image: none !important;
         filter: grayscale(0);
-        transform: scale(1.5);
+        transform: scale(1);
         opacity: 1;
 
         .logo-image-colour {
@@ -385,7 +438,7 @@ fieldset {
 
 .quotes-slider {
     padding: 0 6%; // space for the arrows
-    font-size: $font-size-medium;
+    font-size: $font-size-sm;
 
     .uk-card {
         width: 180px;
@@ -456,7 +509,7 @@ fieldset {
     dt {
         /* headin g*/
         color: $font-strong-light-color;
-        font-weight: 700;
+        font-weight: $font-weight-bold;
         margin-bottom: 1em;
         @media (min-width: 768px){
             font-size: smaller;
@@ -465,6 +518,7 @@ fieldset {
     dd { 
         /* list */
         margin-bottom: 0.5em;
+				font-size: $base-font-size;
         @media (min-width: 768px){
             font-size: smaller;
         }
