@@ -3,10 +3,11 @@ layout: base-dark
 title: Home
 type: page
 order: 0
+show_title: true
 slug: home
 ---
 
-<div class="uk-container uk-container-xsmall uk-margin-large-top uk-animation-fade">
+<div class="uk-container uk-container-xsmall uk-margin-large-top">
     <div uk-grid class="uk-grid-medium uk-margin-large-bottom">
         <div class="uk-width-auto"><img src="/assets/content-images/profile.jpg" width="150" class="uk-border-circle  uk-height-max-small" alt="photo"></div>
         <h1>
@@ -52,7 +53,7 @@ slug: home
         </div>
 
         <div>
-            {% include icon-academic-cap.html %} BSc. Interaction Design
+            {% include svg/icon-academic-cap.html %} BSc. Interaction Design
         </div>
     </div>
 

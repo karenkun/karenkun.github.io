@@ -1,15 +1,14 @@
 ---
-layout: base-dark
+layout: page
 title: Work
 type: page
 order: 1
+show_title: true
 slug: work
 ---
 
 <div class="uk-container uk-container-xsmall">
-    <h1 class="uk-margin">Work</h1>
     More wonderful things coming to this page.<br>In the meantime you can request to see the work.
-
 </div>
 {% include contactform.html %}
 

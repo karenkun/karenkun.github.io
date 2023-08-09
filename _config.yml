@@ -24,8 +24,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   Karen Lo Full-stack  Product & UX Designer based in Vancouver, Canada.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.karenlo.ca" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: k4ren
-github_username: karenkun
+# dribbble_username:
+# facebook_username:
+# flickr_username:
+# github_username: karenkun
+# instagram_username:
+# linkedin_username: lokaren
+# pinterest_username
+# twitter_username: k4ren
+# youtube_username
+# googleplus_username
+# rss
 
 # Build settings
 # theme: "minima"

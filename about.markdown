@@ -1,22 +1,23 @@
 ---
-layout: page-with-title
+layout: page
 title: About
 type: page
 order: 2
+show_title: true
 slug: about
 ---
 
 <a id="top"></a>
 
-<!-- {% include about-tinynav.html %} -->
-
-![Desireability Feasibility Viability Sustainability](/assets/content-images/DFVS-venn.jpg){:class="img-responsive uk-align-center"}{:width="400"}
+{% comment %}
+{% include about-tinynav.html %}
+{% endcomment %}
 
 ### UX Design Consultant • Product Designer • Design Ops • Design Mentor • Speaker • Problem Solver
 
 I enjoy solving complex problems for power users – empowering people to do more with less. I breathe the 80-20 rule where efficiency is the key to success in agile product design. During my undergraduate studies in innovation, I developed a strong inclination towards working in ill-defined problem spaces and helping businesses find their product market fit.
 
-Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_blank"}{:class="uk-button uk-button-text"}{:uk-tooltip="Open link in new window"} — a Vancouver-based development agency that helps businesses by providing innovative technological solutions rooted in Systems Design Engineering. Our team had some fun at a hackathon and won first place at [Angelhack](https://www.angelhack.com/){:target="\_blank"}{:class="uk-button uk-button-text"}{:uk-tooltip="Open link in new window"} Seattle.
+Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_blank"}{:class="uk-button uk-button-text"}{:uk-tooltip="Open link in new window"} — a Vancouver-based development agency that helps businesses by providing innovative technological solutions. Our team had some fun at a hackathon and won first place at [Angelhack](https://www.angelhack.com/){:target="\_blank"}{:class="uk-button uk-button-text"}{:uk-tooltip="Open link in new window"} Seattle in 2012.
 
 ---
 
@@ -31,7 +32,7 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 ## Education
 
 <h6 class="uk-margin-bottom">
-    {% include icon-academic-cap.html %}
+    {% include svg/icon-academic-cap.html %}
     Simon Fraser University (SFU), Canada
 </h6>
 <div uk-grid class="uk-child-width-1-1 uk-grid-small uk-grid-match">
@@ -68,6 +69,7 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 
 ## Impact
 
+![Desireability Feasibility Viability Sustainability](/assets/content-images/DFVS-venn.jpg){:class="img-responsive uk-align-center"}{:width="400"}
 **Business**
 
 **Design**
@@ -129,28 +131,31 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 
 {% endcomment %}
 
+<!-- Modals -->
 <div id="design-diamond" class="uk-modal-full" uk-modal>
   <div class="uk-modal-dialog">
 		<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-		<div class="uk-grid-collapse uk-child-width-1-1 uk-grid-match" uk-grid uk-height-viewport>
+		<div class="uk-grid-collapse uk-child-width-1-1 " uk-grid uk-height-viewport>
 			<div class="uk-width-2-3@m bg-brand-medium uk-padding">
 				<div class="uk-height-1-1 uk-flex uk-flex-middle">
 					<img src="/assets/content-images/about-designdiamond.jpg" alt="Design Diamond Process" class="img-responsive uk-width-1-1">
 				</div>
 			</div>
-			<div class="uk-width-1-3@m uk-padding-large uk-text-medium uk-align-top">
-			<h3>Design Thinking</h3>
-				<p>
-					Before we arrive at a solution, we must first check that we're fixing the right problem. The design thinking process is shaped like a double diamond with each half:
-				</p>
-				<ul>
-					<li>diverging: broadening possibilities</li>
-					<li>converging: honing in focus</li>
-				</ul>
-				<p>
-					As the project progresses, we get closer to a viable solution that addresses the true customer/user needs until we finally launch and refine.
-				</p>
-			</div>
+			<div class="uk-width-1-3@m uk-flex uk-flex-middle">
+			<div class="uk-padding-large">
+				<h3>Design Thinking</h3>
+					<p class="uk-text-medium">
+						Before we arrive at a solution, we must first check that we're fixing the right problem. The design thinking process is shaped like a double diamond with each half:
+					</p>
+					<ul class="uk-text-medium">
+						<li>diverging: broadening possibilities</li>
+						<li>converging: honing in focus</li>
+					</ul>
+					<p class="uk-text-medium">
+						As the project progresses, we get closer to a viable solution that addresses the true customer/user needs until we finally launch and refine.
+					</p>
+					</div>
+				</div>
      </div>
 	</div>
 </div>

@@ -26,86 +26,121 @@ $white-02: rgba(255,255,255,0.4);
 $white-03: rgba(255,255,255,0.1);
 $white-04: rgba(255,255,255,.05);
 
-
+$base-font-family: "Sofia Pro";
+$secondary-font-family: "Nexa";
 
 
 
 body {
-    font-size: $base-font-size;
-    font-family: "Sofia Pro", "Helvetica", "Arial", sans-serif;
-    font-weight: $font-weight-light;
+	font-size: $base-font-size;
+	font-family: $base-font-family, "Helvetica", "Arial", sans-serif;
+	font-weight: $font-weight-light;
 
-    @media (min-width: 1400px){
-        font-size: 22px;
-    }
+	@media (min-width: 1400px){
+		font-size: 22px;
+	}
 
-    @media (max-width: 640px){
-        font-size: 16px;
-    }
+	@media (max-width: 640px){
+		font-size: 16px;
+	}
 }
 
 strong { font-weight: $font-weight-bold;}
 p { 
-    font-weight: $font-weight-light;
-    letter-spacing: 0.04em;
-    a { font-weight: $font-weight-bold;}
+	font-weight: $font-weight-light;
+	letter-spacing: 0.04em;
+	a { font-weight: $font-weight-bold;}
 }
 
 
 /* ------------------------------------ NAV */
 .uk-navbar-nav {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    >li>a { 
-        min-height: auto;
-        font-family: inherit;
-        font-weight: $font-weight-normal;
-        letter-spacing: 0.125em;
-    }
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	>li>a { 
+		min-height: auto;
+		font-family: inherit;
+		font-weight: $font-weight-normal;
+		letter-spacing: 0.125em;
+	}
+}
+.uk-navbar-toggle {
+	font-family: inherit ;
 }
 
+
 #mobile-menu { 
-    .uk-nav {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .uk-offcanvas-bar {
-        background: rgba(0,0,0,0.7);
-        backdrop-filter: blur(10px);
-    }
+	.uk-nav {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;			
+	}
+	.uk-offcanvas-bar {
+		background-color: rgba(255,255,255,0.8);
+		color: $brand-dark;
+
+		.uk-close, .uk-button-link, a {
+			color: inherit;
+			font-family: inherit;
+		}
+	}
+}
+
+// background of the mobile menu offcanvas
+.uk-offcanvas-container::after {
+	content:"";
+	display: block;
+	position: absolute;
+	left:0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.3);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
 }
 
 .uk-logo {
-    img {
-        height: 1.75rem;
-        max-width: none;
-    }
-    justify-content: flex-start !important;
-    width: 1.75rem;
-    overflow: hidden;
-    transition: width 300ms ease-in-out;
-    -webkit-transition: width 300ms ease-in-out;
+	img {
+		height: 1.75rem;
+		max-width: none;
+	}
+	justify-content: flex-start !important;
+	width: 1.75rem;
+	overflow: hidden;
+	transition: width 300ms ease-in-out;
+	-webkit-transition: width 300ms ease-in-out;
+
+	.klo-logo svg {
+		height: 100%;
+		width: auto;
+		max-width: none;
+	}
 }
+
+.klo-logo {
+
+}
+
 @media (min-width: 768px){
-    .uk-navbar-container:hover .uk-logo {
-        width: 200px !important;
-    }
+	.uk-navbar-container:hover .uk-logo {
+		width: 200px !important;
+	}
 }
 
 /* ------------------------------------ GENERIC  */
 .page-content {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 
-    > * {
-        margin-bottom: 7%;
-    }
+	> * {
+		margin-bottom: 7%;
+	}
 }
 .post-content h2 {
-    margin-top: 10%;
+	margin-top: 10%;
 }
 
 // can be used anywhere I want to set a specific background colour
@@ -117,55 +152,57 @@ p {
 
 // override minima, eventually need to delete the below
 h1, h2, h3, h4, h5  {
-    // color: inherit;
-    font-family: "Nexa", sans-serif;
-    font-weight: $font-weight-bold;
-    letter-spacing: 0.125rem;
-    margin-bottom: 1.25em;
+	// color: inherit;
+	font-family: $secondary-font-family, sans-serif;
+	font-weight: $font-weight-bold;
+	letter-spacing: 0.125rem;
+	margin-bottom: 1.25em;
 }
-h4,h5 { font-weight: $font-weight-normal;}
 
 
 // heading font sizing
 h1 { 
-    @media (min-width: 768px){
-        font-size: 5rem; 
-    }
+	@media (min-width: 768px){
+			font-size: 5rem; 
+
+			&.post-title {
+				font-size: 3.5rem;	
+			}
+	}
 }
 
 h2 { 
-    @media (min-width: 768px){
-        font-size: 3.1325rem;
-    }
-    @media (min-width: 1000px){
-        transition: margin 300ms ease-in-out;
-        -webkit-transition: margin 300ms ease-in-out;
-        margin-left: -8%; 
-    }
+	@media (min-width: 768px){
+		font-size: 3.1325rem;
+	}
+	@media (min-width: 1000px){
+		transition: margin 300ms ease-in-out;
+		-webkit-transition: margin 300ms ease-in-out;
+		margin-left: -8%; 
+	}
 }
 
 h3 { 
-    @media (min-width: 768px){
-        font-size: 2.125rem;
-    }
-    @media (min-width: 1000px){
-        transition: margin 300ms ease-in-out;
-        -webkit-transition: margin 300ms ease-in-out;
-        margin-left: -8%; 
-    }
+	@media (min-width: 768px){
+		font-size: 2.125rem;
+	}
+	@media (min-width: 1000px){
+		transition: margin 300ms ease-in-out;
+		-webkit-transition: margin 300ms ease-in-out;
+		margin-left: -8%; 
+	}
 }
 h4 { 
-    @media (min-width: 768px){
-        font-size: 1.625rem;
-    }
+	@media (min-width: 768px){
+		font-size: 1.625rem;
+	}
 }
 
 h5 { 
-    font-weight: $font-weight-bold;
-    letter-spacing: 0.04em;
-    @media (min-width: 768px){
-        font-size: 1.25rem;
-    }
+	letter-spacing: 0.04em;
+	@media (min-width: 768px){
+		font-size: 1.25rem;
+	}
 }
 
 h6 {
@@ -195,23 +232,23 @@ a {
 }
 
 .uk-button-link{
-    font-family: inherit;
-    letter-spacing: 0.125em;
+	font-family: inherit;
+	letter-spacing: 0.125em;
 }
 .uk-button-text {
-    color: $white-02;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: $font-weight-normal;
-    line-height: inherit;
-    text-transform: inherit;
-    display: inline;
-    vertical-align: inherit;
+	color: $white-02;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: $font-weight-normal;
+	line-height: inherit;
+	text-transform: inherit;
+	display: inline;
+	vertical-align: inherit;
 }
 
 .uk-dropdown {
-    font-size: $base-font-size;
-    padding: 1em;
+	font-size: $base-font-size;
+	padding: 1em;
 }
 
 
@@ -222,6 +259,9 @@ a {
 	}
 	&.uk-modal-full { 
 		background-color: white;
+		.uk-close {
+			position: fixed;
+		}
 	}
 
 	h1, h2, h3 {
@@ -236,41 +276,41 @@ a {
 .post-list,
 .social-media-list,
 .contact-list {
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
 }
 .svg-icon {
-    width: $base-font-size;
-    height: $base-font-size;
-    display: inline-block;
-    fill: #828282;
+	width: $base-font-size;
+	height: $base-font-size;
+	display: inline-block;
+	fill: $white-02;
 }
 fieldset {
-    border: 0;
+	border: 0;
 }
 
 .contact-form {
-    border: 1px solid $white-02;
-    font-size: $base-font-size;
-    .uk-input, .uk-textarea { 
-        color: $font-strong-light-color !important ;
-    }
+	border: 1px solid $white-02;
+	font-size: $base-font-size;
+	.uk-input, .uk-textarea { 
+			color: $font-strong-light-color !important ;
+	}
 }
 
 
 .uk-card {
-    h3 { margin-left: 0;}
+	h3 { margin-left: 0;}
 
-    // make the card clickable from nested <a>
-   .uk-card-body  a::before {
-        content: "";
-        position: absolute;
-        top:0;
-        right:0;
-        bottom: 0;
-        left: 0;;
-    }
+	// make the card clickable from nested <a>
+	.uk-card-body  a::before {
+			content: "";
+			position: absolute;
+			top:0;
+			right:0;
+			bottom: 0;
+			left: 0;;
+	}
 }	
 
 // basic card style
@@ -281,31 +321,31 @@ fieldset {
 }
 
 .uk-tooltip {
-    background-color: $brand-light;
+	background-color: $brand-light;
 }
 
 .inline-icon {
-    display: inline-block;
-    &.icon-academic-cap svg {
-        margin-top: -3px;
-    }
+	display: inline-block;
+	&.icon-academic-cap svg {
+			margin-top: -3px;
+	}
 }
 
 
 /* stick tiny nav */
 .tiny-page-nav {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: $base-font-size;
-    width: 200px;
-    
-    @include fade-in-on-hover;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	left: $base-font-size;
+	width: 200px;
+	
+	@include fade-in-on-hover;
 
-    @media (max-width: 959px) {
-        //Medium and below
-        display: none;
-    }
+	@media (max-width: 959px) {
+			//Medium and below
+			display: none;
+	}
 
 }
 
@@ -313,167 +353,171 @@ fieldset {
 /* ------------------------------------ HOME */
 
 .page-home {
-    background-color: $brand-dark;
+	background-color: $brand-dark;
 }
 
 .home-intro {
-    @media (max-width: 640px){  
-        font-size: $font-size-lg;
-    }
-    .uk-dropdown {
-        width: 30em;
-        font-size: $font-size-medium;
-        font-weight: $font-weight-normal;
-    }
+
+	.uk-dropdown {
+		width: 30em;
+		font-size: $font-size-medium;
+		font-weight: $font-weight-normal;
+	}
+	@media (max-width: 640px){  
+		font-size: $font-size-lg;
+		.uk-dropdown {
+			font-size: $font-size-sm;
+		}
+	}
 }
 
 
 .logos-list {
-    transition: background 100ms ease-in;
-    -webkit-transition: background 100ms ease-in;
-    background: rgba(0,0,0,0.3);
-    padding-top: 3%;
-    padding-bottom: 3%;
-    user-select: none;
-    -webkit-user-select: none;
+	transition: background 100ms ease-in;
+	-webkit-transition: background 100ms ease-in;
+	background: rgba(0,0,0,0.3);
+	padding-top: 3%;
+	padding-bottom: 3%;
+	user-select: none;
+	-webkit-user-select: none;
 
-    .logo-image {
-        opacity: 0.35;
-        width: 5.5em;
-        height: 2.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.625em;
-				transform: scale(0.7);
+	.logo-image {
+		opacity: 0.35;
+		width: 5.5em;
+		height: 2.5em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.625em;
+		transform: scale(0.7);
 
 
-        // dark logo
-        filter: grayscale(1);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+		// dark logo
+		filter: grayscale(1);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
 
-        transition: background 150ms ease-in, opacity 150ms ease-in, filter 150ms ease-in, transform 150ms ease-in;
-        -webkit-transition: background 150ms ease-in, opacity 150ms ease-in, filter 150ms ease-in, transform 150ms ease-in;
-        
+		transition: background 150ms ease-in, opacity 150ms ease-in, filter 150ms ease-in, transform 150ms ease-in;
+		-webkit-transition: background 150ms ease-in, opacity 150ms ease-in, filter 150ms ease-in, transform 150ms ease-in;
+		
 
-        .logo-image-colour {
-            opacity: 0;
-            max-height: 100%;
-            max-width: 100%;
-        }
+		.logo-image-colour {
+			opacity: 0;
+			max-height: 100%;
+			max-width: 100%;
+		}
 
-        &.smaller {
-            width: 3.5em;
-            margin-left: 0.75em;
-            margin-right: 0.75em;
-        }
+		&.smaller {
+			width: 3.5em;
+			margin-left: 0.75em;
+			margin-right: 0.75em;
+		}
 
-        &.small {
-            width: 3em;
-            margin-left: 0.25em;
-            margin-right: 0.25em;   
-        }
+		&.small {
+			width: 3em;
+			margin-left: 0.25em;
+			margin-right: 0.25em;   
+		}
 
-        &.larger {
-            width: 5em;
-        }
+		&.larger {
+			width: 5em;
+		}
 
-        &.large {
-            width: 8em;
-        }
-    }
-    /*
-    .logo-image:hover {
-        background-image: none !important;
-        filter: grayscale(0);
-        transform: scale(1.75);
-        background-color: white;
-        opacity: 1;
+		&.large {
+			width: 8em;
+		}
+	}
+	/*
+	.logo-image:hover {
+		background-image: none !important;
+		filter: grayscale(0);
+		transform: scale(1.75);
+		background-color: white;
+		opacity: 1;
 
-        .logo-image-colour {
-            opacity: 1;
-            transition: opacity 100ms ease-in;
-            -webkit-transition: opacity 100ms ease-in;
-            transition-delay: 100ms;
-        }
-    } */
+		.logo-image-colour {
+			opacity: 1;
+			transition: opacity 100ms ease-in;
+			-webkit-transition: opacity 100ms ease-in;
+			transition-delay: 100ms;
+		}
+	} */
 
-    &:hover {
-        cursor: pointer;
-    }
+	&:hover {
+		cursor: pointer;
+	}
 
-    @media (max-width: 640px){ 
-        .logo-image {
-            padding: 0;
-        }
-     }
+	@media (max-width: 640px){ 
+		.logo-image {
+				padding: 0;
+		}
+	}
 }
 
 .logo-list-in-colour {
-    background: white;
-    transition: background 300ms ease-in-out;
-    -webkit-transition: background 300ms ease-in-out;
-    .logo-image {
-        background-image: none !important;
-        filter: grayscale(0);
-        transform: scale(1);
-        opacity: 1;
+	background: white;
+	transition: background 300ms ease-in-out;
+	-webkit-transition: background 300ms ease-in-out;
+	.logo-image {
+		background-image: none !important;
+		filter: grayscale(0);
+		transform: scale(1);
+		opacity: 1;
 
-        .logo-image-colour {
-            opacity: 1;
-            transition: opacity 100ms ease-in;
-            -webkit-transition: opacity 100ms ease-in;
-            transition-delay: 150ms;
-        }
-    }
-    @media (max-width: 640px){ 
-        .logo-image {
-            transform: none;
-        }
-     }
+		.logo-image-colour {
+				opacity: 1;
+				transition: opacity 100ms ease-in;
+				-webkit-transition: opacity 100ms ease-in;
+				transition-delay: 150ms;
+		}
+	}
+	@media (max-width: 640px){ 
+		.logo-image {
+				transform: none;
+		}
+	}
 }
 
 
 .quotes-slider {
-    padding: 0 6%; // space for the arrows
-    font-size: $font-size-sm;
+	padding: 0 6%; // space for the arrows
+	font-size: $font-size-sm;
 
-    .uk-card {
-        width: 180px;
-        color: $font-strong-light-color;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        -webkit-user-select: none;
-        user-select: none;
+	.uk-card {
+		width: 180px;
+		color: $font-strong-light-color;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		-webkit-user-select: none;
+		user-select: none;
 
-        p {
-            margin-bottom: $font-size-medium;
-        }
-        .uk-text-uppercase {
-            font-weight: bold;
-        }
+		p {
+			margin-bottom: $font-size-medium;
+		}
+		.uk-text-uppercase {
+			font-weight: bold;
+		}
 
-        @media (min-width: 640px){
-            text-align: left;
-        }
-            
-        @media (max-width: 640px){
-            //Small and below
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            width: 60%;
-        }
-    }
+		@media (min-width: 640px){
+			text-align: left;
+		}
+				
+		@media (max-width: 640px){
+			//Small and below
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			width: 60%;
+		}
+	}
 }
 
 .featured-work {
-    .uk-grid {
-        margin-left: 0;
-    }
+	.uk-grid {
+		margin-left: 0;
+	}
 }
 
 // don't show the label "featured" anywhere
@@ -482,77 +526,77 @@ fieldset {
 // don't show the label meant for custom sets of work
 [class*="tag-custom"] { display: none;}  
 
+
+
 /* ------------------------------------ WORK */    
 .page-work {
-    background-color: $brand-light;
+	background-color: $brand-light;
 }
 
 .page-contact {
-    background-color: $brand-light;
-    .page-content { padding: 0 1rem;}
+	background-color: $brand-light;
+	.page-content { padding: 0 1rem;}
 }
 
 .contact-form-container {
-    width: 640px;
-    height: 560px;
-    border: 0;
+	width: 640px;
+	height: 560px;
+	border: 0;
 }
 
 
 /* ------------------------------------ ABOUT */
 .page-about {
-    background-color: $brand-medium;
+	background-color: $brand-medium;
 
-    strong {
-        color: $font-strong-light-color;
-    }
-    dt {
-        /* headin g*/
-        color: $font-strong-light-color;
-        font-weight: $font-weight-bold;
-        margin-bottom: 1em;
-        @media (min-width: 768px){
-            font-size: smaller;
-        }
-    }
-    dd { 
-        /* list */
-        margin-bottom: 0.5em;
-				font-size: $base-font-size;
-        @media (min-width: 768px){
-            font-size: smaller;
-        }
-        font-weight: 300;
-        line-height: 1.2;
-    }
+	strong {
+		color: $font-strong-light-color;
+	}
+	dt {
+		/* headin g*/
+		color: $font-strong-light-color;
+		font-weight: $font-weight-bold;
+		margin-bottom: 1em;
+		@media (min-width: 768px){
+				font-size: smaller;
+		}
+	}
+	dd { 
+		/* list */
+		margin-bottom: 0.5em;
+		font-size: $base-font-size;
+		@media (min-width: 768px){
+			font-size: smaller;
+		}
+		font-weight: 300;
+		line-height: 1.2;
+	}
 
-    .influence-slider {
+	.influence-slider {
 
-        padding: 0 5%;
-        .uk-slidenav {
-            margin-top: -20px;
-        }
+		padding: 0 5%;
+		.uk-slidenav {
+			margin-top: -20px;
+		}
 
-        .uk-card  {
-            @include fade-in-on-hover(0.3);
+		.uk-card  {
+			@include fade-in-on-hover(0.3);
 
-            &:hover .card-caption {
-                opacity: 1;
-            }
+			&:hover .card-caption {
+				opacity: 1;
+			}
 
-        }
-        .card-caption {
-            opacity: 0;
-            transition: opacity 300ms ease-in-out;
-            -webkit-transition: opacity 300ms ease-in-out;
-            line-height: 1.2;
-            font-size: $font-size-xs;
-            padding-top: 0.5rem;
-            
-        }
-
-
-    }
+		}
+		.card-caption {
+			opacity: 0;
+			transition: opacity 300ms ease-in-out;
+			-webkit-transition: opacity 300ms ease-in-out;
+			line-height: 1.2;
+			font-size: $font-size-xs;
+			padding-top: 0.5rem;
+				
+		}
+	}
 }
 
 
