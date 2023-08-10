@@ -35,6 +35,7 @@ body {
 	font-size: $base-font-size;
 	font-family: $base-font-family, "Helvetica", "Arial", sans-serif;
 	font-weight: $font-weight-light;
+	letter-spacing: 0.04em;
 
 	@media (min-width: 1400px){
 		font-size: 22px;
@@ -48,9 +49,9 @@ body {
 strong { font-weight: $font-weight-bold;}
 p { 
 	font-weight: $font-weight-light;
-	letter-spacing: 0.04em;
 	a { font-weight: $font-weight-bold;}
 }
+
 
 
 /* ------------------------------------ NAV */

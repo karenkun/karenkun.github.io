@@ -21,7 +21,7 @@
               {%- if my_page.title -%}
                 {%- if my_page.show_in_nav -%}
                 
-                    <a class="uk-button uk-button-text {% if page.slug == my_page.slug %}uk-active{% endif %}"  style="order: {{ my_page.order | escape }}" href="{{ my_page.url | relative_url }}" tabindex="{{my_page.order plus 1 }}">{{ my_page.slug | escape }}</a>
+                    <a class="uk-button uk-button-text {% if page.slug == my_page.slug %}uk-active{% endif %}"  style="order: {{ my_page.order | escape }}" href="{{ my_page.url | relative_url }}" tabindex="{{my_page.order | plus: 1 }}">{{ my_page.slug | escape }}</a>
                 
                 {%- endif -%}
               {%- endif -%}
@@ -47,7 +47,7 @@
         {%- if my_page.title -%}
           {%- if my_page.show_in_nav -%}
             <li class="uk-flex {% if page.slug == my_page.slug %}uk-active{% endif %}" style="order: {{ my_page.order | escape }}">
-              <a class="uk-button uk-button-link uk-text-large" href="{{ my_page.url | relative_url }}">{{ my_page.slug | escape }}</a>
+              <a class="uk-button uk-button-link uk-text-large" href="{{ my_page.url | relative_url }}" tabindex="{{my_page.order | plus: 1 }}">{{ my_page.slug | escape }}</a>
             </li>
           {%- endif -%}
         {%- endif -%}
