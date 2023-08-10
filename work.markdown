@@ -3,8 +3,9 @@ layout: page
 title: Work
 type: page
 order: 1
-show_title: true
 slug: work
+show_in_nav: true
+show_title: true
 ---
 
 <div class="uk-container uk-container-xsmall">

@@ -140,26 +140,20 @@
           "default": "page"
         },
         {
-          "title": "Slug  (also appears in nav)",
+          "title": "Order",
+          "name": "order",
+          "type": "number"
+        },
+				{
+          "title": "Slug  (how it appears in nav)",
           "name": "slug",
           "type": "string",
           "default": "{{slug}}"
         },
         {
-          "title": "Order",
-          "name": "order",
-          "type": "number"
-        },
-        {
           "title": "Permalink",
           "name": "permalink",
           "type": "string"
-        },
-        {
-          "title": "show_in_nav",
-          "name": "show_in_nav",
-          "type": "boolean",
-          "default": "true"
         },
 				{
           "title": "show_title",
@@ -167,6 +161,12 @@
           "type": "boolean",
           "default": "true"
         }
+				{
+          "title": "Show in nav menu",
+          "name": "show_in_nav",
+          "type": "boolean",
+          "default": "true"
+        },
       ]
     }
   ],

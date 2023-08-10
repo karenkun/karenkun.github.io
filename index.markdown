@@ -3,8 +3,9 @@ layout: base-dark
 title: Home
 type: page
 order: 0
-show_title: true
 slug: home
+show_title: true
+show_in_nav: true
 ---
 
 <div class="uk-container uk-container-xsmall uk-margin-large-top">

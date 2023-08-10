@@ -3,14 +3,15 @@ layout: page
 title: About
 type: page
 order: 2
-show_title: true
 slug: about
+show_title: true
+show_in_nav: true
 ---
 
 <a id="top"></a>
 
 {% comment %}
-{% include about-tinynav.html %}
+{%- include about-tinynav.html -%}
 {% endcomment %}
 
 ### UX Design Consultant • Product Designer • Design Ops • Design Mentor • Speaker • Problem Solver
@@ -23,7 +24,7 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 
 <h5 class="uk-text-center">Design Thinking</h5>
 <div class="uk-card uk-borderd uk-text-center uk-align-center uk-width-2-3@s">
-	<a href="#design-diamond" data-uk-toggle>
+	<a href="#design-diamond" data-uk-toggle tabindex="5">
 		<img src="/assets/content-images/about-designdiamond.jpg" alt="Design Diamond Process" class="img-responsive fade-in-hover">
 		<span class="uk-button uk-button-link uk-margin-small-top" uk-icon="arrow-up">what's this?</span>
 	</a>
@@ -142,18 +143,18 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 				</div>
 			</div>
 			<div class="uk-width-1-3@m uk-flex uk-flex-middle">
-			<div class="uk-padding-large">
-				<h3>Design Thinking</h3>
-					<p class="uk-text-medium">
-						Before we arrive at a solution, we must first check that we're fixing the right problem. The design thinking process is shaped like a double diamond with each half:
-					</p>
-					<ul class="uk-text-medium">
-						<li>diverging: broadening possibilities</li>
-						<li>converging: honing in focus</li>
-					</ul>
-					<p class="uk-text-medium">
-						As the project progresses, we get closer to a viable solution that addresses the true customer/user needs until we finally launch and refine.
-					</p>
+				<div class="uk-padding-large">
+					<h3>Design Thinking</h3>
+						<p class="uk-text-default">
+							Before we arrive at a solution, we must first check that we're fixing the right problem. The design thinking process is shaped like a double diamond with each half:
+						</p>
+						<ul class="uk-text-default">
+							<li>diverging: broadening possibilities</li>
+							<li>converging: honing in focus</li>
+						</ul>
+						<p class="uk-text-default">
+							As the project progresses, we get closer to a viable solution that addresses the true customer/user needs until we finally launch and refine.
+						</p>
 					</div>
 				</div>
      </div>

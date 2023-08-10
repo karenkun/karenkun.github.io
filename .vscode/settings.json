@@ -1,17 +1,6 @@
 {
   "frontMatter.preview.host": "http://127.0.0.1:4000/",
-  "[markdown]": {
-    "editor.lineHeight": 26,
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 100,
-    "editor.lineNumbers": "off",
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    },
-    "editor.minimap.enabled": false
-  },
+  "[markdown]": {},
   "frontMatter.dashboard.openOnStart": false,
-  "frontMatter.framework.startCommand": "bundle exec jekyll serve --livereload"
+  "frontMatter.framework.startCommand": "bundle exec jekyll serve --livereload",
 }

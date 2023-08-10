@@ -57,11 +57,18 @@ p {
 .uk-navbar-nav {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	>li>a { 
+	>li>a,
+	> .uk-button	{ 
 		min-height: auto;
 		font-family: inherit;
 		font-weight: $font-weight-normal;
 		letter-spacing: 0.125em;
+		text-transform: uppercase;
+		font-size: $font-size-sm;
+		color: $white-02;
+		&.uk-active {
+			color: white;
+		}
 	}
 }
 .uk-navbar-toggle {
@@ -118,10 +125,6 @@ p {
 		width: auto;
 		max-width: none;
 	}
-}
-
-.klo-logo {
-
 }
 
 @media (min-width: 768px){
