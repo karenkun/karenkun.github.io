@@ -18,25 +18,25 @@ show_in_nav: true
     <p class="uk-text-lead home-intro">
         I’m a
         <span>
-            <a class="uk-button uk-button-text" tabindex="5">full-stack designer</a>
+            <a class="uk-button uk-button-text">full-stack designer</a>
             <span uk-dropdown>I wear many hats beyond a user experience designer: UI, product design, user testing, user research, visual design, frontend web design, to name some...</span>
         </span>
          with over 15 years of experience helping startups to larger businesses bring their product vision from
          <span>
-            <a class="uk-button uk-button-text" tabindex="6">zero-to-one</a>
+            <a class="uk-button uk-button-text">zero-to-one</a>
             <span uk-dropdown>From ideation to production – early stage product design and development where the problem space is ripe but the solution isn't finalized. It often requires creative problem-solving, smart prioritization/pivoting, multi-disciplinary skills and systems design thinking.</span>
         </span>. I specialize in experience design,
          <span>
-            <a class="uk-button uk-button-text" tabindex="7">innovative industries</a>
+            <a class="uk-button uk-button-text">innovative industries</a>
             <span uk-dropdown>Finance (fintech), AI, quantum computing, real estate, health care, insurance, e-commerce, digital currency, marketplaces, business intelligence, task management, user/customer relationship management, analytics, and workflow management.
             </span>
         </span>,
         <span>
-            <a class="uk-button uk-button-text" tabindex="8">prototyping</a>
+            <a class="uk-button uk-button-text">prototyping</a>
             <span uk-dropdown>The sooner we can test, the sooner we can validate ideas. I always create clickable design prototypes so we can gather the best feedback early in the process. No static screens here.</span>
         </span>,
         <span>
-            <a class="uk-button uk-button-text" tabindex="9">ethnography</a>
+            <a class="uk-button uk-button-text">ethnography</a>
             <span uk-dropdown>Studying human behaviour, culture, in context is key to successful human-centered design.</span>
         </span>, and data visualization.
 
@@ -44,7 +44,7 @@ show_in_nav: true
 
     <p class="uk-text-lead home-intro">
         In my leisure time, I love solving
-        <span><a class="uk-button uk-button-text" tabindex="10">usability problems for my rabbit</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy AB testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</span></span>
+        <span><a class="uk-button uk-button-text">usability problems for my rabbit</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy AB testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</span></span>
         , planning travel experiences for others, people-watching and learning languages.
     </p>
 

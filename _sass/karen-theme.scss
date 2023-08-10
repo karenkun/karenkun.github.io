@@ -55,11 +55,17 @@ p {
 
 
 /* ------------------------------------ NAV */
-.uk-navbar-nav {
+.navigation-menu {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	>li>a,
-	> .uk-button	{ 
+	display: flex;
+	gap: 30px;
+
+
+	.uk-active .uk-button {
+		color: white;
+	}
+	.uk-button	{ 
 		min-height: auto;
 		font-family: inherit;
 		font-weight: $font-weight-normal;
@@ -67,9 +73,7 @@ p {
 		text-transform: uppercase;
 		font-size: $font-size-sm;
 		color: $white-02;
-		&.uk-active {
-			color: white;
-		}
+		
 	}
 }
 .uk-navbar-toggle {
@@ -120,6 +124,9 @@ p {
 	overflow: hidden;
 	transition: width 300ms ease-in-out;
 	-webkit-transition: width 300ms ease-in-out;
+	&:focus {
+		width: 200px;
+	}
 
 	.klo-logo svg {
 		height: 100%;
@@ -462,7 +469,8 @@ fieldset {
 	}
 }
 
-.logo-list-in-colour {
+.logo-list-in-colour,
+.logos-list:focus {
 	background: white;
 	transition: background 300ms ease-in-out;
 	-webkit-transition: background 300ms ease-in-out;

@@ -24,7 +24,7 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 
 <h5 class="uk-text-center">Design Thinking</h5>
 <div class="uk-card uk-borderd uk-text-center uk-align-center uk-width-2-3@s">
-	<a href="#design-diamond" data-uk-toggle tabindex="5">
+	<a href="#design-diamond" data-uk-toggle>
 		<img src="/assets/content-images/about-designdiamond.jpg" alt="Design Diamond Process" class="img-responsive fade-in-hover">
 		<span class="uk-button uk-button-link uk-margin-small-top" uk-icon="arrow-up">what's this?</span>
 	</a>
