@@ -44,7 +44,7 @@ show_in_nav: true
 
     <p class="uk-text-lead home-intro">
         In my leisure time, I love solving
-        <span><a class="uk-button uk-button-text" tabindex="10">usability problems for my rabbit</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy AB testing treats and giving quantitative feedback (rather than qualitative). Actions speak louder than words ... seeing as I'm a rabbit.</span></span>
+        <span><a class="uk-button uk-button-text" tabindex="10">usability problems for my rabbit</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy AB testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</span></span>
         , planning travel experiences for others, people-watching and learning languages.
     </p>
 
