@@ -386,7 +386,7 @@ fieldset {
 	-webkit-user-select: none;
 
 	.logo-image {
-		opacity: 0.35;
+		opacity: 0.3;
 		width: 5.5em;
 		height: 2.5em;
 		display: flex;
@@ -450,6 +450,9 @@ fieldset {
 
 	&:hover {
 		cursor: pointer;
+		.logo-image {
+			opacity: 0.4;
+		}
 	}
 
 	@media (max-width: 640px){ 
@@ -467,7 +470,7 @@ fieldset {
 		background-image: none !important;
 		filter: grayscale(0);
 		transform: scale(1);
-		opacity: 1;
+		opacity: 1 !important;
 
 		.logo-image-colour {
 				opacity: 1;
@@ -493,7 +496,7 @@ fieldset {
 		color: $font-strong-light-color;
 		margin-left: auto;
 		margin-right: auto;
-		text-align: center;
+		text-align: left;
 		-webkit-user-select: none;
 		user-select: none;
 
@@ -503,17 +506,27 @@ fieldset {
 		.uk-text-uppercase {
 			font-weight: bold;
 		}
+	}
+}
 
-		@media (min-width: 640px){
-			text-align: left;
-		}
-				
-		@media (max-width: 640px){
-			//Small and below
+@media (max-width: 640px){
+	.quotes-slider li {
+		display: flex !important;
+		flex-direction: column;
+    justify-content: center;
+
+		.uk-card {
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
-			width: 60%;
+			width: 80%;
+		}
+	}
+	.quotes-slider-buttons {
+		text-align: center;
+		.uk-slidenav {
+		position: static !important;
+		transform: none;
 		}
 	}
 }
