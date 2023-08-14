@@ -21,7 +21,7 @@ show_in_nav: true
             <a class="discovery-link">full-stack designer</a>
             <span uk-dropdown>I wear many hats beyond a user experience designer: UI, product design, user testing, user research, visual design, frontend web design, to name some...</span>
         </span>
-         with over 15 years of experience helping startups to larger businesses bring their product vision from
+         with over 15 years of experience helping startups to larger businesses bring their product visions from
          <span>
             <a class="discovery-link">zero-to-one</a>
             <span uk-dropdown>From ideation to production – early stage product design and development where the problem space is ripe but the solution isn't finalized. It often requires creative problem-solving, smart prioritization/pivoting, multi-disciplinary skills and systems design thinking.</span>

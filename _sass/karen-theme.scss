@@ -70,6 +70,7 @@ p {
 
 	.uk-active .uk-button {
 		color: white;
+		font-weight: $font-weight-bold;
 	}
 	.uk-button	{ 
 		min-height: auto;
@@ -251,9 +252,6 @@ a {
 }
 
 .uk-light {
-	.uk-button {
-		color: inherit;
-	}
 	.uk-button-primary {
 		background-color: $brand-light;
 		color: white;
@@ -268,13 +266,14 @@ a {
 
 .uk-button-link{
 	font-family: inherit;
+	font-weight: $font-weight-bold;
 	letter-spacing: 0.125em;
 }
 .uk-button-text {
 	color: $white-02;
 	font-family: inherit;
 	font-size: inherit;
-	font-weight: $font-weight-normal;
+	font-weight: $font-weight-bold;
 	line-height: inherit;
 	text-transform: inherit;
 	display: inline;
@@ -597,7 +596,7 @@ a.discovery-link {
 	background-color: white;
 	color: $brand-dark;
 	padding-bottom: 5%;
-	
+	margin-top: 2rem;
 }
 .work-brief-heading {
 	margin-top: 3rem;
