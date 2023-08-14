@@ -408,7 +408,7 @@ fieldset {
 
 a.discovery-link {
 	font-weight: $font-weight-normal;
-	background-color: rgb(8, 66, 152, 0.4);
+	background-color: rgba(8, 66, 152, 0.4);
 	transition: background-color 300ms ease-in-out;
 	&:hover {
 		text-decoration: none;
