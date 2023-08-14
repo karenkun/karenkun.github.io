@@ -9,8 +9,8 @@ $brand-light: #084298;
 $brand-lighter: #6EA8FE;
 $base-font-size: 18px;
 
-$font-size-xl: 1.25rem;
-$font-size-lg: 1.125rem;
+$font-size-xl: 1.5rem;
+$font-size-lg: 1.25rem;
 $font-size-medium: 1rem;
 $font-size-sm: 0.875rem;
 $font-size-xs: 0.75rem;
@@ -30,12 +30,18 @@ $base-font-family: "Sofia Pro";
 $secondary-font-family: "Nexa";
 
 
+html { 
+	transition: background-color 300ms ease-out;
+}
 
 body {
 	font-size: $base-font-size;
 	font-family: $base-font-family, "Helvetica", "Arial", sans-serif;
 	font-weight: $font-weight-light;
 	letter-spacing: 0.04em;
+	-moz-osx-font-smoothing: grayscale; 
+	-webkit-font-smoothing: antialiased;
+
 
 	@media (min-width: 1400px){
 		font-size: 22px;
@@ -161,14 +167,19 @@ p {
 .bg-brand-lighter { background-color: $brand-lighter;}
 
 
-// override minima, eventually need to delete the below
-h1, h2, h3, h4, h5  {
+h1, h2 {
 	// color: inherit;
 	font-family: $secondary-font-family, sans-serif;
 	font-weight: $font-weight-bold;
 	letter-spacing: 0.125rem;
 	margin-bottom: 1.25em;
 }
+h3, h4, h5, h6  {
+	letter-spacing: 0.0625em;
+	font-family: $base-font-family;
+	font-weight: $font-weight-bold;
+}
+
 
 
 // heading font sizing
@@ -217,10 +228,7 @@ h5 {
 }
 
 h6 {
-	font-weight: $font-weight-normal;
 	font-size: $base-font-size;
-	letter-spacing: 0.08em;
-	font-family: inherit;	
 	margin-bottom: 0.25em;
 }
 
@@ -241,6 +249,22 @@ a {
 		}
 	}
 }
+
+.uk-light {
+	.uk-button {
+		color: inherit;
+	}
+	.uk-button-primary {
+		background-color: $brand-light;
+		color: white;
+		&:hover {
+			background-color: $brand-lighter;
+			color: white;
+		}
+	}
+}
+
+
 
 .uk-button-link{
 	font-family: inherit;
@@ -379,6 +403,16 @@ fieldset {
 		.uk-dropdown {
 			font-size: $font-size-sm;
 		}
+	}
+}
+
+a.discovery-link {
+	font-weight: $font-weight-normal;
+	background-color: rgb(8, 66, 152, 0.4);
+	transition: background-color 300ms ease-in-out;
+	&:hover {
+		text-decoration: none;
+		background-color: $brand-light;
 	}
 }
 
@@ -558,9 +592,47 @@ fieldset {
 	background-color: $brand-light;
 }
 
+.work-brief {
+	width: 100%;
+	background-color: white;
+	color: $brand-dark;
+	padding-bottom: 5%;
+	
+}
+.work-brief-heading {
+	margin-top: 3rem;
+	align-items: center;
+	h3 { 
+		margin-left: 0;
+		color: inherit;
+	}
+}
+.work-brief-tag {
+	font-size: $font-size-sm;
+	text-transform: uppercase;
+	opacity: 0.6;
+	letter-spacing: 0.125em;
+}
+.work-brief-text {
+	margin-top: 3rem;
+	column-width: 14em;
+	column-gap: 5rem;
+	font-size: $font-size-lg;
+}
+
+.work-brief-footer {
+	margin-top: 2rem;
+	text-align: center;
+	.uk-button { 
+		margin-top: 2rem;
+	}
+}
+
 .page-contact {
 	background-color: $brand-light;
-	.page-content { padding: 0 1rem;}
+	.page-content { 
+		padding: 0 1rem;
+	}
 }
 
 .contact-form-container {
