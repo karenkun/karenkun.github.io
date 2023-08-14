@@ -2,14 +2,14 @@
 layout: base-dark
 ---
 
-<div class="posts-index uk-container">
+<div class="posts-index">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+    <h1 class="page-heading uk-container uk-container-xsmall uk-margin-bottom">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
 
-
+	{% comment %}
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
@@ -78,6 +78,7 @@ layout: base-dark
     {%- endif %}
 
   {%- endif -%}
+	{% endcomment %}
 
     <!-- /posts-index  -->
 </div>

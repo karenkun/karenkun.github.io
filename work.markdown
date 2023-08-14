@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: posts-index
 title: Work
 type: page
 order: 1
@@ -15,7 +15,7 @@ show_title: true
 
 {% comment %}
 
-layout: posts-index
+{% include work-brief.html %}
 
 <div class="uk-card uk-card-body uk-card-secondary uk-margin ">
 <h3>Categories:</h3>
