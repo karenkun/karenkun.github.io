@@ -39,7 +39,7 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 <div uk-grid class="uk-child-width-1-1 uk-grid-small uk-grid-match">
 	<div class="uk-card">
 		<div class="uk-card-body subtle-card">
-			<h6>Bachelor of Science in Interaction Design</h6>
+			<h6>BSc. in Interaction Design</h6>
 			<p class="uk-margin-remove uk-text-small">
 				4-year design program in the School of Interactive Arts & Technology (SIAT) at SFU
 			</p>
@@ -83,7 +83,7 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 
 <div uk-grid class="uk-child-width-1-4@m uk-child-width-1-2">
 	<div>
-		<dt>Design</dt>
+		<dt>UX Design</dt>
 		<dd>User Research</dd>
 		<dd>User Flows</dd>
 		<dd>User Journey Mapping</dd>
@@ -91,6 +91,9 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 		<dd>Rapid Prototyping</dd>
 		<dd>Wireframing</dd>
 		<dd>Usability Testing</dd>
+		<dt class="uk-margin-top">Visual</dt>
+		<dd>Adobe Creative Suite</dd>
+		<dd>Lottie Animations</dd>
 	</div>
 	<div>
 		<dt>Prototyping & Testing</dt>
@@ -98,6 +101,8 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 		<dd>Invision</dd>
 		<dd>Sketch</dd>
 		<dd>Balsamiq</dd>
+		<dd>Marvel</dd>
+		<dt class="uk-margin-top">Analytics</dt>
 		<dd>Amplitude</dd>
 		<dd>FullStory</dd>
 		<dd>HotJar</dd>
@@ -107,22 +112,26 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 		<dd>Miro</dd>
 		<dd>Gliffy</dd>
 		<dd>Whimsical</dd>
-		<dd>Aha!</dd>
-		<dd>Airtable</dd>
-		<dd>Asana</dd>
 		<dd>Jira</dd>
-		<dd>Shortcut</dd>
-		<dd>Trello</dd>
+		<dt class="uk-margin-top">Design Hand-off</dt>
+		<dd>Storybook</dd>
+		<dd>Zeroheight</dd>
 	</div>
 	<div>
 		<dt>Web Development</dt>
 		<dd>HTML/CSS</dd>
-		<dd>CMS (Content Management Systems)</dd>
 		<dd>React</dd>
 		<dd>Angular</dd>
 		<dd>Ruby on Rails</dd>
 		<dd>GitHub</dd>
 		<dd>BitBucket</dd>
+		<dt class="uk-margin-top">Page Builders/CMS</dt>
+		<dd>Squarespace</dd>
+		<dd>Webflow</dd>
+		<dd>Weebly</dd>
+		<dd>Wordpress</dd>
+		<dd>Wix</dd>
+		
 	</div>
 </div>
 {% comment %}

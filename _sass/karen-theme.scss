@@ -38,7 +38,7 @@ body {
 	font-size: $base-font-size;
 	font-family: $base-font-family, "Helvetica", "Arial", sans-serif;
 	font-weight: $font-weight-light;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.03em;
 	-moz-osx-font-smoothing: grayscale; 
 	-webkit-font-smoothing: antialiased;
 
@@ -176,7 +176,7 @@ h1, h2 {
 	margin-bottom: 1.25em;
 }
 h3, h4, h5, h6  {
-	letter-spacing: 0.0625em;
+	letter-spacing: inherit;
 	font-family: $base-font-family;
 	font-weight: $font-weight-bold;
 }
@@ -502,8 +502,7 @@ a.discovery-link {
 	}
 }
 
-.logo-list-in-colour,
-.logos-list:focus {
+.logos-list-in-colour {
 	background: white;
 	transition: background 300ms ease-in-out;
 	-webkit-transition: background 300ms ease-in-out;
@@ -593,13 +592,24 @@ a.discovery-link {
 
 .work-brief {
 	width: 100%;
+	margin: 0;
 	background-color: white;
 	color: $brand-dark;
-	padding-bottom: 5%;
-	margin-top: 2rem;
+	min-height: 80vh;
+	border-bottom: 1px solid #ddd;
+	@media (max-width: 1200px) {
+		justify-content: center;
+	}
+}
+.work-brief-visual {
+	min-height: 25em;
+}
+.work-brief-content {
+	padding: 3% 3% 5% 5%;
+	align-content: flex-start;
 }
 .work-brief-heading {
-	margin-top: 3rem;
+	margin-top: 5%;
 	align-items: center;
 	h3 { 
 		margin-left: 0;
@@ -611,17 +621,46 @@ a.discovery-link {
 	text-transform: uppercase;
 	opacity: 0.6;
 	letter-spacing: 0.125em;
+
+	@media (min-width: 640px) {
+		text-align: right;
+	}
 }
 .work-brief-text {
-	margin-top: 3rem;
-	column-width: 14em;
-	column-gap: 5rem;
-	font-size: $font-size-lg;
+	margin-top: 5%;
+	//column-width: 14em;
+	//column-gap: 5rem;
+	@media (min-width: 640px){ 
+		font-size: $font-size-lg;
+	}
+
+
+	a, .uk-button-link, .uk-button-text { 
+		color: inherit;
+		&:hover { 
+			color: inherit;
+		}
+		&::before { border-bottom-color: inherit;}
+	}
 }
 
 .work-brief-footer {
 	margin-top: 2rem;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3%;
+
+	img {
+		//logo
+		height: 1.5em;
+		&.logo-medium {
+			height: 2em;
+		}
+		&.logo-large {
+			height: 5em;
+		}
+	}
 	.uk-button { 
 		margin-top: 2rem;
 	}
