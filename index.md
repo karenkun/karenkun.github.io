@@ -8,24 +8,25 @@ show_title: true
 show_in_nav: true
 ---
 
-<div class="uk-container uk-container-xsmall uk-margin-large-top">
+<div class="uk-container uk-container-xsmall uk-margin-top home-intro">
     <div uk-grid class="uk-grid-medium uk-margin-large-bottom">
         <div class="uk-width-auto"><img src="/assets/content-images/profile.jpg" width="150" class="uk-border-circle  uk-height-max-small" alt="photo"></div>
-        <h1>
-            Hi <br> I'm Karen</h1>
+    				<h1>
+    						Hi <br> I'm Karen
+    							<small class="uk-display-block">15 yrs experience · 12+ industries · 20+ shipped products</small>
+    				</h1>
     </div>
-
-    <p class="uk-text-lead home-intro">
+    <p>
         I’m a
         <span>
             <a class="discovery-link">full-stack designer</a>
             <span uk-dropdown>I wear many hats beyond a user experience designer: UI, product design, user testing, user research, visual design, frontend web design, to name some...</span>
         </span>
-         with over 15 years of experience helping startups to larger businesses bring their product visions from
+         who helps businesses (from startups to enterprise) bring their product visions to life – from
          <span>
             <a class="discovery-link">zero-to-one</a>
             <span uk-dropdown>From ideation to production – early stage product design and development where the problem space is ripe but the solution isn't finalized. It often requires creative problem-solving, smart prioritization/pivoting, multi-disciplinary skills and systems design thinking.</span>
-        </span>. I specialize in experience design,
+        </span>. I specialize in designing experiences in
          <span>
             <a class="discovery-link">innovative industries</a>
             <span uk-dropdown>Finance (fintech), AI, quantum computing, real estate, health care, insurance, e-commerce, digital currency, marketplaces, business intelligence, task management, user/customer relationship management, analytics, and workflow management.
@@ -39,28 +40,23 @@ show_in_nav: true
             <a class="discovery-link">ethnography</a>
             <span uk-dropdown>Studying human behaviour, culture, in context is key to successful human-centered design.</span>
         </span>, and data visualization.
-
 </p>
-
-    <p class="uk-text-lead home-intro">
-        In my leisure time, I love solving
-        <span><a class="discovery-link">usability problems for my rabbit</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy AB testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</span></span>
-        , planning travel experiences for others, people-watching and learning languages.
+    <p class="home-intro uk-text-small">
+        In my leisure time, I solve
+        <span><a class="discovery-link">my rabbit's usability issues</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy A/B testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</span></span>
+        , designing smooth travel experiences, people-watching and learning languages.
     </p>
-
     <div uk-grid class="uk-grid-small uk-child-width-auto@s uk-child-width-1-1 uk-text-default">
         <div>
             <span uk-icon="location" class="inline-icon"></span> Vancouver, Canada
         </div>
-
         <div>
             {% include svg/icon-academic-cap.html %} BSc. Interaction Design
         </div>
     </div>
-
 </div>
 
-<h3 class="uk-text-center uk-container">Research • UX • UI • Prototyping • User Testing • Launch</h3>
+<h3 class="uk-text-center uk-container">Research · UX · UI · Prototyping · User Testing · Launch</h3>
 
 {% include home-logos.html %}
 
@@ -71,7 +67,7 @@ show_in_nav: true
     {% include home-featured-work.html %}
 
     <!--
-    <center  uk-height-viewport="offset-bottom: 20" class="uk-flex uk-flex-middle uk-flex-center">
+    <center class="uk-height-viewport="offset-bottom: 20" class="uk-flex uk-flex-middle uk-flex-center">
         <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-text-left">
             <h1 class="uk-card-title">Karen Lo</h1>
             <p class="uk-text-small">based in Vancouver, Canada</p>

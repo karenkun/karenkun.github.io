@@ -81,7 +81,7 @@
           "type": "string",
           "default": "{{slug}}"
         },
-				{
+        {
           "title": "show_title",
           "name": "show_title",
           "type": "boolean",
@@ -144,7 +144,7 @@
           "name": "order",
           "type": "number"
         },
-				{
+        {
           "title": "Slug  (how it appears in nav)",
           "name": "slug",
           "type": "string",
@@ -155,18 +155,18 @@
           "name": "permalink",
           "type": "string"
         },
-				{
+        {
           "title": "show_title",
           "name": "show_title",
           "type": "boolean",
           "default": "true"
-        }
-				{
+        },
+        {
           "title": "Show in nav menu",
           "name": "show_in_nav",
           "type": "boolean",
           "default": "true"
-        },
+        }
       ]
     }
   ],
@@ -181,15 +181,5 @@
         "post"
       ]
     }
-  ],
-  "frontMatter.taxonomy.tags": [
-    "custom-a",
-    "featured",
-    "general"
-  ],
-  "frontMatter.taxonomy.categories": [
-    "frontend",
-    "general",
-    "work"
   ]
 }

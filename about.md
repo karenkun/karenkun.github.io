@@ -14,11 +14,18 @@ show_in_nav: true
 {%- include about-tinynav.html -%}
 {% endcomment %}
 
-### UX Design Consultant • Product Designer • Design Ops • Design Mentor • Speaker • Problem Solver
+### Full-Stack Product Designer • UX Consultant • Design Ops • Design Mentor • Speaker • Problem Solver
 
-I enjoy solving complex problems for power users – empowering people to do more with less. I breathe the 80-20 rule where efficiency is the key to success in agile product design. During my undergraduate studies in innovation, I developed a strong inclination towards working in ill-defined problem spaces and helping businesses find their product market fit.
+I enjoy solving complex problems for power users – empowering people to do more with less. I live by the 80-20 rule: in agile product design, the right 20% of effort can unlock 80% of the value. That practice goes back to my undergrad studies in innovation, where I was drawn to ill-defined problem spaces (the ones without a clear brief or definition) and help early-stage businesses find product-market fit.
 
-Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_blank"}{:class="uk-button uk-button-text"}{:uk-tooltip="Open link in new window"} — a Vancouver-based development agency that helps businesses by providing innovative technological solutions. Our team had some fun at a hackathon and won first place at [Angelhack](https://www.angelhack.com/){:target="\_blank"}{:class="uk-button uk-button-text"}{:uk-tooltip="Open link in new window"} Seattle in 2012.
+Early in my career, I co-founded [Latero Labs](https://www.laterolabs.com/){:target="\_blank"}{:class="uk-button uk-button-text"}{:uk-tooltip="Open link in new window"} — a Vancouver-based development agency that transformed business ideas into innovative technological solutions. Our team had some fun at a hackathon and won first place at [Angelhack](https://www.angelhack.com/){:target="\_blank"}{:class="uk-button uk-button-text"}{:uk-tooltip="Open link in new window"} Seattle in 2012. I've since gone solo but I look back fondly at those times and still provide them with design support.
+
+#### Speaking & Mentorship
+
+<ul>
+	<li>Juice Labs hosted at RED Academy Vancouver, 2019</li>
+	<li>Entrepreneurship workshop at the C3 Leadership Conference hosted by C3 Korean Canadian Society, 2019</li>
+</ul>
 
 ---
 
@@ -64,6 +71,41 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 </div>
 ## Experience
 
+<ul class="uk-text-">
+	<li class="uk-card">
+		<span class="uk-text-bold">Senior UX Product Designer</span> • LandSure Systems • 2024 - Present<br/>
+		<p class="uk-text-small">Leading the shift to Figma-based design system for a First Nations Land Registry platform; Raised the quality of build with clear documentation and QA activities to support the team. Set WCAG 2 accessibility standards.</p>
+	</li>
+	<li class="uk-card">
+		<span class="uk-text-bold">Senior UX Product Designer</span> • Blanka • 2023 - 2024<br/>
+		<p class="uk-text-small">Owned end-to-end feature design alongside product leadership • work has measurably lifted conversion and reduced churn. Established a design system to stay aligned with new branding.</p>
+	</li>
+	<li class="uk-card">
+		<span class="uk-text-bold">Senior UX Product Designer, Design Lead</span> • Tribe Property Technologies • 2020 - 2022<br/>
+		<p class="uk-text-small">Grew and led the design team; establish the design language and support the growth strategy. Solve customer pain points through journey-mapping for a multi-department property platform.</p>
+	</li>
+	<li class="uk-card">
+		<span class="uk-text-bold">Senior UX Product Designer, Design Lead</span> • Finhaven • 2019 - 2020<br/>
+		<p class="uk-text-small">Hired and mentored a UX team; set design vision and critique process while shipping new product lines for a fintech platform.</p>
+	</li>
+	<li class="uk-card">
+		<span class="uk-text-bold">Senior UX Designer</span> • Invoke Co. • 2018 - 2019<br/>
+		<p class="uk-text-small">Redesigned BCAA's insurance purchase flow (+105% quote starts, +67% conversion) and led UX for D-Wave's quantum-cloud onboarding experience.</p>
+	</li>
+	<li class="uk-card">
+		<span class="uk-text-bold">Design Lead</span> • XeraFlop Technologies • 2015 - 2018<br/>
+		<p class="uk-text-small">Design and build out omni-channel e-commerce to support in-store and online ordering on a self-serve white-labelling platform.</p>
+	</li>
+	<li class="uk-card">
+		<span class="uk-text-bold">Head of Interaction Design</span> • Investments Illustrated • 2010 - 2012<br/>
+		<p class="uk-text-small">Led a small design team; created The Big Picture™, a proprietary financial data-visualization chart still in use by financial advisors today.</p>
+	</li>
+	<li class="uk-card">
+		<span class="uk-text-bold">Independent Practice</span> • Karen Lo Design Consulting • 2009 - Present<br/>
+		<p class="uk-text-small">20+ clients across fintech, health care, government, and emerging tech, including BC Children's Hospital, Sanctuary AI, D-Wave, Lululemon, and BCAA.</p>
+	</li>
+</ul>
+
 [See details on my LinkedIn](https://www.linkedin.com/in/lokaren/details/experience/){:target="\_blank"}{:class="uk-button uk-button-text"}{:uk-icon="icon:arrow-right "}
 
 {% comment %}
@@ -98,10 +140,15 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 	<div>
 		<dt>Prototyping & Testing</dt>
 		<dd>Figma</dd>
-		<dd>Invision</dd>
+		<dd>Axure</dd>
+		<!--<dd>Invision</dd>
 		<dd>Sketch</dd>
 		<dd>Balsamiq</dd>
-		<dd>Marvel</dd>
+		<dd>Marvel</dd> -->
+		<dt class="uk-margin-top">AI Workflow</dt>
+		<dd>Figma MCP</dd>
+		<dd>Claude Design</dd>
+		<dd>Claude Code</dd>
 		<dt class="uk-margin-top">Analytics</dt>
 		<dd>Amplitude</dd>
 		<dd>FullStory</dd>
@@ -110,22 +157,26 @@ Years ago, I helped start [Latero Labs](https://www.laterolabs.com/){:target="\_
 	<div>
 		<dt>Collaboration</dt>
 		<dd>Miro</dd>
-		<dd>Gliffy</dd>
-		<dd>Whimsical</dd>
+		<!-- <dd>Gliffy</dd>
+		<dd>Whimsical</dd> -->
 		<dd>Jira</dd>
-		<dt class="uk-margin-top">Design Hand-off</dt>
+		<dd>Confluence</dd>
 		<dd>Storybook</dd>
 		<dd>Zeroheight</dd>
-	</div>
-	<div>
-		<dt>Web Development</dt>
+		<dt class="uk-margin-top">Web Development</dt>
 		<dd>HTML/CSS</dd>
 		<dd>React</dd>
 		<dd>Angular</dd>
 		<dd>Ruby on Rails</dd>
 		<dd>GitHub</dd>
 		<dd>BitBucket</dd>
+	</div>
+	<div>
+		<dt>QA Testing</dt>
+		<dd>Cypress</dd>
+		<dd>Selenium</dd>
 		<dt class="uk-margin-top">Page Builders/CMS</dt>
+		<dd>Shopify</dd>
 		<dd>Squarespace</dd>
 		<dd>Webflow</dd>
 		<dd>Weebly</dd>
