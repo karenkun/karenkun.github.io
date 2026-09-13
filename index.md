@@ -17,9 +17,9 @@ show_in_nav: true
     				</h1>
     </div>
     <p>
-        I’m a
+        I’m a principal
         <span>
-            <a class="discovery-link">full-stack designer</a>
+            <a class="discovery-link">full-stack product designer</a>
             <small uk-dropdown>I wear many hats beyond a user experience designer: UI, product design, user testing, user research, visual design, frontend web design, to name some...</small>
         </span>
          who helps businesses (from startups to enterprise) bring their product visions to life – from
