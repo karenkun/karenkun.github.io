@@ -20,30 +20,30 @@ show_in_nav: true
         I’m a
         <span>
             <a class="discovery-link">full-stack designer</a>
-            <span uk-dropdown>I wear many hats beyond a user experience designer: UI, product design, user testing, user research, visual design, frontend web design, to name some...</span>
+            <small uk-dropdown>I wear many hats beyond a user experience designer: UI, product design, user testing, user research, visual design, frontend web design, to name some...</small>
         </span>
          who helps businesses (from startups to enterprise) bring their product visions to life – from
          <span>
             <a class="discovery-link">zero-to-one</a>
-            <span uk-dropdown>From ideation to production – early stage product design and development where the problem space is ripe but the solution isn't finalized. It often requires creative problem-solving, smart prioritization/pivoting, multi-disciplinary skills and systems design thinking.</span>
+            <small uk-dropdown>From ideation to production – early stage product design and development where the problem space is ripe but the solution isn't finalized. It often requires creative problem-solving, smart prioritization/pivoting, multi-disciplinary skills and systems design thinking.</small>
         </span>. I specialize in designing experiences in
          <span>
             <a class="discovery-link">innovative industries</a>
-            <span uk-dropdown>Finance (fintech), AI, quantum computing, real estate, health care, insurance, e-commerce, digital currency, marketplaces, business intelligence, task management, user/customer relationship management, analytics, and workflow management.
-            </span>
+            <small uk-dropdown>Finance (fintech), AI, quantum computing, real estate, health care, insurance, e-commerce, digital currency, marketplaces, business intelligence, task management, user/customer relationship management, analytics, and workflow management.
+            </small>
         </span>,
         <span>
             <a class="discovery-link">prototyping</a>
-            <span uk-dropdown>The sooner we can test, the sooner we can validate ideas. I always create clickable design prototypes so we can gather the best feedback early in the process. No static screens here.</span>
+            <small uk-dropdown>The sooner we can test, the sooner we can validate ideas. I always create clickable design prototypes so we can gather the best feedback early in the process. No static screens here.</small>
         </span>,
         <span>
             <a class="discovery-link">ethnography</a>
-            <span uk-dropdown>Studying human behaviour, culture, in context is key to successful human-centered design.</span>
+            <small uk-dropdown>Studying human behaviour, culture, in context is key to successful human-centered design.</small>
         </span>, and data visualization.
 </p>
     <p class="home-intro uk-text-small">
         In my leisure time, I solve
-        <span><a class="discovery-link">my rabbit's usability issues</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy A/B testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</span></span>
+        <small><a class="discovery-link">my rabbit's usability issues</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy A/B testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</span></small>
         , designing smooth travel experiences, people-watching and learning languages.
     </p>
     <div uk-grid class="uk-grid-small uk-child-width-auto@s uk-child-width-1-1 uk-text-default">
