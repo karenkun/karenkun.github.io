@@ -40,13 +40,15 @@ show_in_nav: true
             <a class="discovery-link">ethnography</a>
             <small uk-dropdown>Studying human behaviour, culture, in context is key to successful human-centered design.</small>
         </span>, and data visualization.
-</p>
-    <p class="home-intro uk-text-small">
-        In my leisure time, I solve
-        <a class="discovery-link">my rabbit's usability issues</a>
-				<small uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy A/B testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</span></small>
-        , designing smooth travel experiences, people-watching and learning languages.
-    </p>
+		</p>
+		<small>
+			<p class="home-intro">
+					In my leisure time, I solve
+					<a class="discovery-link">my rabbit's usability issues</a>
+					<small uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy A/B testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</small>
+					, designing smooth travel experiences, people-watching and learning languages.
+			</p>
+		</small>
     <div uk-grid class="uk-grid-small uk-child-width-auto@s uk-child-width-1-1 uk-text-default">
         <div>
             <span uk-icon="location" class="inline-icon"></span> Vancouver, Canada

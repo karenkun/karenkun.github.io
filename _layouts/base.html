@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<html lang='{{ page.lang | default: site.lang | default: "en" }}' class="page-{{ page.slug }} category-{{ page.categories }}">
-
-<link rel="stylesheet" href="/assets/uikit/css/uikit.min.css">
+<!doctype html>
+<html
+  lang='{{ page.lang | default: site.lang | default: "en" }}'
+  class="page-{{ page.slug }} category-{{ page.categories }}"
+>
+  <link rel="stylesheet" href="/assets/uikit/css/uikit.min.css" />
 
   {%- include head.html -%}
 
   <body>
-
     {%- include header.html -%}
-    
-    <main class="page-content" aria-label="Content">
-        {{ content }}
-    </main>
+
+    <main class="page-content" aria-label="Content">{{ content }}</main>
 
     {%- include footer.html -%}
-
   </body>
-
+  <!-- UIKIT /start -->
   <script src="/assets/uikit/js/uikit.min.js"></script>
   <script src="/assets/uikit/js/uikit-icons.min.js"></script>
   <script src="/assets/uikit/js/components/parallax.min.js"></script>
   <script src="/assets/uikit/js/components/slider.min.js"></script>
-
+  <!-- UIKIT /end -->
 </html>
