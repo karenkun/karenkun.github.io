@@ -43,7 +43,8 @@ show_in_nav: true
 </p>
     <p class="home-intro uk-text-small">
         In my leisure time, I solve
-        <small><a class="discovery-link">my rabbit's usability issues</a><span uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy A/B testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</span></small>
+        <a class="discovery-link">my rabbit's usability issues</a>
+				<small uk-dropdown><img src="/assets/content-images/butterscotch.jpg" class="uk-border-circle uk-margin-small-bottom uk-margin-right uk-float-left" width="100">Hi my name is Butter Scotch! I enjoy A/B testing treats, giving quantitative feedback, and being observed by the humans. Actions speak louder than words ... seeing as I'm a rabbit.</span></small>
         , designing smooth travel experiences, people-watching and learning languages.
     </p>
     <div uk-grid class="uk-grid-small uk-child-width-auto@s uk-child-width-1-1 uk-text-default">
